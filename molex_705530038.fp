@@ -1,11 +1,11 @@
 
 Element["" "Molex_705534038" "" "" 10.00mil 10.00mil 0.0000 0.0000 3 100 ""]
 (
-	Pin[0.0000 -150.00mil 71.00mil 10.00mil 66.00mil 46.00mil "4" "4"
+	Pin[0.0000 -150.00mil 71.00mil 10.00mil 66.00mil 43.00mil "4" "4"
 ""]
-	Pin[0.0000 -50.00mil 71.00mil 10.00mil 66.00mil 46.00mil "3" "3" ""]
-	Pin[0.0000 50.00mil 71.00mil 10.00mil 66.00mil 46.00mil "2" "2" ""]
-	Pin[0.0000 150.00mil 71.00mil 10.00mil 66.00mil 46.00mil "1" "1"
+	Pin[0.0000 -50.00mil 71.00mil 10.00mil 66.00mil 43.00mil "3" "3" ""]
+	Pin[0.0000 50.00mil 71.00mil 10.00mil 66.00mil 43.00mil "2" "2" ""]
+	Pin[0.0000 150.00mil 71.00mil 10.00mil 66.00mil 43.00mil "1" "1"
 "square"]
 
 	ElementLine [-42.00mil -192.00mil 42.00mil -192.00mil 6.00mil]

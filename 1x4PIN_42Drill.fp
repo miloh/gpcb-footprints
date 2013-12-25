@@ -1,3 +1,10 @@
+#Author: R. Miloh Alexander
+#License: GPL
+#Use: unrestricted with attribution
+
+# 42mil drill for common 0.100" headers
+# reducing drillin parts count for TAM-RC project 
+
 Element["" "1x4PIN" "1x4PIN" "1x4PIN" 31.9999mm 63.9999mm -1.5400mm -118.11mil 0 100 ""]
 (
 	Pin [300.00mil 0.0000 81.00mil 39.37mil 84.94mil 42.00mil "4" "4" "edge2"]

@@ -4,8 +4,8 @@ Element[ "" "molex_705530036" "" "" 10 10 0 0 3 100""]
 #[-50.0, 50.0]
 
 #Pin [rX rY]
-Pin [ 0mil -50.0mil 71mil 10mil 66mil 46mil  "2" "2" "" ]
-Pin [ 0mil 50.0mil 71mil 10mil 66mil 46mil  "1" "1" "square" ]
+Pin [ 0mil -50.0mil 71mil 10mil 66mil 43mil  "2" "2" "" ]
+Pin [ 0mil 50.0mil 71mil 10mil 66mil 43mil  "1" "1" "square" ]
 
 #ElementLine[ rX1 rY1 rX2 rY2  silk thicknessmil]
 ElementLine[ -42.0mil -98.0mil 42.0mil -98.0mil 6mil]

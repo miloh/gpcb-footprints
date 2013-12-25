@@ -1,3 +1,6 @@
+#Author: R. Miloh Alexander
+#License: GPL
+#Use: unrestricted with attribution
 
 Element["" "For Measurement" "100Thou header line" "" 9.7104mm 3.5758mm -320.90mil 20.10mil 0 100 ""]
 (
