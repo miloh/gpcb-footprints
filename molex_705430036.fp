@@ -1,7 +1,10 @@
+#Author: R. Miloh Alexander
+#License: GPL
+#Use: unrestricted with attribution
+
+#Element
 Element[ "" "molex_705430036" "" "" 10 10 0 0 3 100""]
 (
-#[0, 0]
-#[-50.0, 50.0]
 
 #Pin [rX rY]
 Pin [ 0mil -50.0mil 71mil 10mil 66mil 46mil  "1" "1" "square" ]
