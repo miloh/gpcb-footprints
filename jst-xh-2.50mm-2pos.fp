@@ -24,8 +24,8 @@
 Element["" "JST-XH-2.50mm" "B2B-XH-2" "B2B-XH-2"0 0 -2.25mm 3.7mm  0 100 ""]
 (
 #Pin [rX rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
-Pin [-1.25mm 0mm 81.00mil 39.37mil 84.94mil 42.00mil "1" "1" "square,edge2"]
-Pin [1.25mm 0mm 81.00mil 39.37mil 84.94mil 42.00mil "2" "2" "edge2"]
+Pin [-1.25mm 0mm 81.00mil 39.37mil 84.94mil 42.00mil "2" "2" "edge2"]
+Pin [1.25mm 0mm 81.00mil 39.37mil 84.94mil 42.00mil "1" "1" "square,edge2"]
 #ElementLine[ rX1 rY1 rX2 rY2  silk thicknessmil]
 ElementLine [-3.7mm -2.2mm -3.7mm 3.55mm 10.00mil]
 ElementLine [3.7mm -2.2mm 3.7mm 3.55mm 10.00mil]
