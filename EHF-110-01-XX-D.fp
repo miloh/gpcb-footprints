@@ -23,7 +23,7 @@ Element["" "26 pin (2x13) header for Samtec Tigereye EHF/SHF"  "26 pin EHF" "val
 	Pin[ 0mil  100mil  44mil 5mil 44mil 28mil   "16" "16" ""]
 	Pin[ 50mil 50mil  44mil 5mil 44mil 28mil   "17" "17" ""]
 	Pin[ 0mil  50mil  44mil 5mil 44mil 28mil   "18" "18" ""]
-	Pin[ 50mil 5mil  44mil 5mil 44mil 28mil   "19" "19" ""]
+	Pin[ 50mil 0mil  44mil 5mil 44mil 28mil   "19" "19" ""]
 	Pin[ 0mil  0mil  44mil 5mil 44mil 28mil   "20" "20" ""]
 	
 # reference centerline commented out
