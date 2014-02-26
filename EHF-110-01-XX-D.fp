@@ -1,4 +1,4 @@
-Element["" "26 pin (2x13) header for Samtec Tigereye EHF/SHF"  "26 pin EHF" "val" 0 0 150mil -200mil 3 100 ""]
+Element["" "20 pin (2x13) header for Samtec Tigereye EHF/SHF"  "20 pin EHF" "val" 0 0 150mil -200mil 3 100 ""]
 
 # Element [ SFlags "Desc" "Name" "Value" MX MY TX TY TDir Scale TSFlags]
 
