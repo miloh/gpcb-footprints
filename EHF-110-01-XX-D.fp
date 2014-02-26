@@ -29,19 +29,30 @@ Element["" "26 pin (2x13) header for Samtec Tigereye EHF/SHF"  "26 pin EHF" "val
 # reference centerline commented out
 	#ElementLine [ -106.50mil 225mil 156.5mil 225mil 5mil]
 	
-# silk outline for latch tab
-	ElementLine [ 100mil 125mil 156.5mil 125mil 5mil]
-	ElementLine [ 100mil 325mil 156.5mil 325mil 5mil]
-# latch outline	
-	ElementLine [ -106.5mil -310mil 156.5mil -310mil 5mil]
-	ElementLine [ 156.5mil -310mil 156.5mil 760mil 5mil]
-	ElementLine [ 156.5mil 760mil -106.5mil 760mil 5mil]
-	ElementLine [ -106.5mil 760mil -106.5mil -310mil 5mil]
+# silk outline for latch orienting tab
+	ElementLine [ 123mil 125mil 156.5mil 125mil 5mil]
+	ElementLine [ 123mil 125mil 123mil 325mil 5mil]
+	ElementLine [ 123mil 325mil 156.5mil 325mil 5mil]
 
-# outlines for something like flapping wing ejectors
+# full part outline (latch unextended)
+	ElementLine [ -106.5mil -310mil 89.5mil -310mil 5mil]
+# hint line for assembly orientation
+	ElementLine [89.5mil -310mil 156.5mil -243mil 5mil] 
+	ElementLine [ 156.5mil -243mil 156.5mil 125mil 5mil]
+        ElementLine [ 156.5mil 325mil 156.5mil 693mil 5mil]
+# hint line for assembly orientation
+	ElementLine [156.5mil 693mil 89.5mil 760mil 5mil] 
+	ElementLine [89.5mil 760mil -106.5mil 760mil 5mil]
+
+	ElementLine [ -106.5mil 760mil -106.5mil 660mil 5mil]
+	ElementLine [ -106.5mil 660mil -86.5mil 660mil 5mil]
+	ElementLine [ -86.5mil 660mil -86.5mil -210mil 5mil]
+	ElementLine [ -86.5mil -210mil -106.5mil -210mil 5mil]
+	ElementLine [ -106.5mil -210mil -106.5mil -310mil 5mil]
+
+# outlines for pin block  
 	ElementLine [ -50mil -50mil 100mil -50mil 5mil]
 	ElementLine [ 100mil -50mil 100mil 500mil 5mil]  
 	ElementLine [ 100mil 500mil -50mil 500mil 5mil]
 	ElementLine [ -50mil 500mil -50mil -50mil 5mil]
-
 )
