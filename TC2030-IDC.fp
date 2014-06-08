@@ -7,7 +7,7 @@
 # unit base is mils
 
 # Element [ element-flags desc.  pcb-name value .... ]
-Element[ "" "Tag Connect 6 pin needle programming adpater" "TC2030-IDC"  "" 200mil  200mil -100mil -100mil0 100 ""]
+Element[ "" "Tag Connect 6 pin needle programming adpater" "TC2030-IDC"  "" 200mil  200mil 100mil 150mil 1 100 ""]
 (
 	# Pin [rX rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
 	Pin [-100.00mil  -100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "x" "x" ""]
@@ -27,9 +27,9 @@ Element[ "" "Tag Connect 6 pin needle programming adpater" "TC2030-IDC"  "" 200m
 	Pad [50.00mil  25.0mil 50.00mil  25.0mil  31.00mil 20.0mil 35.0mil "5" "5" ""]
 	Pad [50.00mil -25.0mil 50.00mil -25.0mil  31.00mil 20.0mil 35.0mil "6" "6" ""]
 
-	#ElementLine [100.00mil 100.00mil 300.00mil 100.00mil 10.00mil]
-	#ElementLine [300.00mil 100.00mil 300.00mil 300.00mil 10.00mil]
-	#ElementLine [300.00mil 300.00mil 100.00mil 300.00mil 10.00mil]
-	#ElementLine [100.00mil 300.00mil 100.00mil 100.00mil 10.00mil]
+	ElementLine [-160.00mil -160.00mil 150.00mil -160.00mil 10.00mil]
+	ElementLine [150.00mil -160.00mil 150.00mil 160.00mil 10.00mil]
+	ElementLine [150.00mil 160.00mil -160.00mil 160.00mil 10.00mil]
+	ElementLine [-160.00mil 160.00mil -160.00mil -160.00mil 10.00mil]
 
 	)
