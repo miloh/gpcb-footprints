@@ -1,0 +1,15 @@
+
+# Vim is Editing files #
+################
+*.swp
+# schematics for geda/gaf #
+*.sch~
+*.sym~
+*.pcb-
+*.fp~
+*.fp-
+*.gbr
+*.ps
+*.pdf
+*.cnc
+*.backup
