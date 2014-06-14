@@ -10,10 +10,10 @@
 Element[ "" "Tag Connect 6 pin needle programming adpater" "TC2030-IDC"  "" 200mil  200mil 100mil 150mil 1 100 ""]
 (
 	# Pin [rX rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
-	Pin [-100.00mil  -100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "x" "x" ""]
-	Pin [25.00mil    -100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "x" "x" ""]
-	Pin [-100.00mil   100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "x" "x" ""]
-	Pin [25.00mil     100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "x" "x" ""]
+	Pin [-100.00mil  -100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "" "" ""]
+	Pin [25.00mil    -100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "" "" ""]
+	Pin [-100.00mil   100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "" "" ""]
+	Pin [25.00mil     100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "" "" ""]
 	
 	Pin [-100.00mil   0.00mil 39.0mil 10.00mil 43.00mil 39.00mil "1" "1" ""]
 	Pin [ 100.00mil -40.0mil 39.00mil 10.00mil 43.00mil 39.00mil "1" "1" ""]
