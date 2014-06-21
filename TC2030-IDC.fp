@@ -15,9 +15,9 @@ Element[ "" "Tag Connect 6 pin needle programming adpater" "TC2030-IDC"  "" 200m
 	Pin [-100.00mil   100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "" "" ""]
 	Pin [25.00mil     100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "" "" ""]
 	
-	Pin [-100.00mil   0.00mil 39.0mil 10.00mil 43.00mil 39.00mil "1" "1" ""]
-	Pin [ 100.00mil -40.0mil 39.00mil 10.00mil 43.00mil 39.00mil "1" "1" ""]
-	Pin [ 100.00mil  40.0mil 39.00mil 10.00mil 43.00mil 39.00mil "1" "1" ""]
+	Pin [-100.00mil   0.00mil 39.0mil 10.00mil 43.00mil 39.00mil "" "" ""]
+	Pin [ 100.00mil -40.0mil 39.00mil 10.00mil 43.00mil 39.00mil "" "" ""]
+	Pin [ 100.00mil  40.0mil 39.00mil 10.00mil 43.00mil 39.00mil "" "" ""]
 
 	# Pad [ x1 y1 x2 y2 thickness clear mask "name" "pad_number" sflags]
 	Pad [-50.0mil  25.0mil -50.0mil  25.0mil  31.00mil 20.0mil 35.0mil "1" "1" ""]
