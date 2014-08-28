@@ -1,4 +1,4 @@
-
+# footprint for a bbb - beaglebone black	
 
 Element["" "BBB-footprint" "BBB-footprint" "" 0.00mil 0.00mil 1500.00mil -1000.00mil 0 100 ""]
 (
