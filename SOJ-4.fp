@@ -19,9 +19,9 @@ ElementArc [-4.5mm 1.6mm 0 -0  0  6.28 15mil ]
 ElementLine[-0.5mm 0mm   0.5mm  0mm     0.125mm  ]
 ElementLine[0mm   0.5mm 0mm   -0.5mm   0.125mm  ]
 
-ElementLine[-3.6mm 2.7mm -3.6mm -2.7mm 0.125mm  ]
-ElementLine[-3.6mm -2.7mm 3.6mm -2.7mm 0.125mm  ]
-ElementLine[3.6mm -2.7mm 3.6mm 2.7mm 0.125mm  ]
-ElementLine[3.6mm 2.7mm -3.6mm 2.7mm 0.125mm  ]
+ElementLine[-3.65mm 2.75mm -3.65mm -2.75mm 0.125mm  ]
+ElementLine[-3.65mm -2.75mm 3.65mm -2.75mm 0.125mm  ]
+ElementLine[3.65mm -2.75mm 3.65mm 2.75mm 0.125mm  ]
+ElementLine[3.65mm 2.75mm -3.65mm 2.75mm 0.125mm  ]
 )
 
