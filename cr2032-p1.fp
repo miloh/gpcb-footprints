@@ -6,9 +6,9 @@ Element["" "LINXTECHNOLOGIES CR2032 BATTERY HOLDER" "BAT-HLD-001" "BAT-HLD-001" 
 # ------------------------------------------------------------------
 # Pad[      rX1   rY1   rX2  rY2   Thickn  Clr   Msk   Nm Nr     Fl  ]
 #-------------------------------------------------------------------
-    Pad [ -11.45mm 1.3mm  -11.45mm -1.3mm 2.5mm 8mil  2.70mm "MNTPAD" "1" "square"]
-    Pad [  11.45mm 1.3mm  11.45mm -1.3mm 2.5mm 8mil  2.70mm "MNTPAD" "1" "square"]
-    Pad [ 0.00mm 0.00mm  0.00mm 0.00mm 8.9mm 8mil  9.05mm "MNTPAD" "1" ""]
+    Pad [ -11.45mm 1.3mm  -11.45mm -1.3mm 2.5mm 8mil  2.70mm "POS" "1" "square"]
+    Pad [  11.45mm 1.3mm  11.45mm -1.3mm 2.5mm 8mil  2.70mm "POS" "1" "square"]
+    Pad [ 0.00mm 0.00mm  0.00mm 0.00mm 8.9mm 8mil  9.05mm "NEG" "2" ""]
 
 # ------------------------------------------------------------------
 # ElementArc [rX rY Width Height StartAngle DeltaAngle Thickness]
