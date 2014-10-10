@@ -1,5 +1,5 @@
 
-Element["" "" "" "" 48.00mil 43.00mil 0.0000 0.0000 0 34 ""]
+Element["" "0402 with polarity mark" "" "" 48.00mil 43.00mil -20.0mil  -75.0mil 0 50 ""]
 (
 	Pad[-15.74mil -2.83mil -15.74mil 5.03mil 19.68mil 20.00mil 39.68mil "1" "1" "square"]
 	Pad[15.74mil -2.83mil 15.74mil 5.03mil 19.68mil 20.00mil 39.68mil "2" "2" "square"]
