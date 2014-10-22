@@ -1,6 +1,13 @@
+#Author: R. Miloh Alexander
+#Use: unrestricted with attribution
 
-Element["" "" "" "" 422.07mil 5.3308mm 0.0000 0.0000 0 100 ""]
+# Element [ element-flags desc.  pcb-name value .... ]
+
+
+Element["" XUNTONG BTLE module" "PTR-9018" "PTR-9018" 422.07mil 5.3308mm 0.0000 0.0000 0 100 ""]
 (
+	Pad [0.4064mm 0.4064mm  0.4064mm  1.2192mm 0.8128mm 0.254mm  0.1524mm "name" "pad_number" sflags]
+	# Pad [ x1 y1 x2 y2 thickness clear mask "name" "pad_number" sflags]
 	Pad[-260.96mil 11.0790mm -260.96mil 12.6059mm 0.8423mm 12.00mil 0.9947mm "GND" "1" "square,edge2"]
 	Pad[-5.3284mm 11.0742mm -5.3284mm 12.6011mm 0.8423mm 12.00mil 0.9947mm "NC" "2" "square,edge2"]
 	Pad[-4.1028mm 11.0774mm -4.1028mm 12.6043mm 0.8423mm 12.00mil 0.9947mm "VCC" "3" "square,edge2"]
