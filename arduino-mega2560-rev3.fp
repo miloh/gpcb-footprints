@@ -787,7 +787,7 @@ Symbol['~' 12.00mil]
 )
 Attribute("PCB::grid::size" "0.0000mm")
 Attribute("PCB::grid::unit" "mil")
-Via[23.1152mm 67.0548mm 36.00mil 20.00mil 0.0000 20.00mil "" "selected"]
+Via[23.1152mm 67.0548mm 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 Via[38.2813mm 16.2232mm 36.00mil 20.00mil 0.0000 20.00mil "600,2000" ""]
 Via[113.2260mm 16.3396mm 36.00mil 20.00mil 0.0000 20.00mil "3550,2000" ""]
 Via[89.3408mm 59.6178mm 36.00mil 20.00mil 0.0000 20.00mil "2600,300" ""]
@@ -959,6 +959,15 @@ Element["" "Header connector, ribbon cable numbering" "" "HEADER36_2" 4608.00mil
 	)
 Layer(1 "top")
 (
+	Line[23.1152mm 67.0548mm 23.1152mm 13.7148mm 6.00mil 12.00mil "clearline"]
+	Line[23.1152mm 13.7148mm 119.6355mm 13.7148mm 6.00mil 12.00mil "clearline"]
+	Line[119.6355mm 13.7148mm 122.1752mm 16.2546mm 6.00mil 12.00mil "clearline"]
+	Line[23.1152mm 67.1049mm 122.1755mm 67.1049mm 6.00mil 12.00mil "clearline"]
+	Line[122.1755mm 67.1049mm 122.1755mm 65.7847mm 6.00mil 12.00mil "clearline"]
+	Line[122.1755mm 65.7847mm 124.7153mm 63.2449mm 6.00mil 12.00mil "clearline"]
+	Line[124.7153mm 63.2449mm 124.7153mm 28.9546mm 6.00mil 12.00mil "clearline"]
+	Line[124.7153mm 28.9546mm 122.1767mm 1040.00mil 6.00mil 12.00mil "clearline"]
+	Line[122.1767mm 1040.00mil 122.1767mm 16.2577mm 6.00mil 12.00mil "clearline"]
 )
 Layer(2 "ground")
 (
