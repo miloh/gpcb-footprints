@@ -5,7 +5,7 @@ FileVersion[20091103]
 
 PCB["" 145.4186mm 3025.00mil]
 
-Grid[500.000000 1.2193mm 0.1240mm 1]
+Grid[0.003937 1.2193mm 0.1240mm 1]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 10.00mil 11.00mil 6.00mil]
@@ -785,12 +785,19 @@ Symbol['~' 12.00mil]
 	SymbolLine[15.00mil 35.00mil 20.00mil 35.00mil 8.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
-Attribute("PCB::grid::size" "5.00mil")
+Attribute("PCB::grid::size" "0.0000mm")
 Attribute("PCB::grid::unit" "mil")
+Via[23.1152mm 67.0548mm 36.00mil 20.00mil 0.0000 20.00mil "" "selected"]
+Via[38.2813mm 16.2232mm 36.00mil 20.00mil 0.0000 20.00mil "600,2000" ""]
+Via[113.2260mm 16.3396mm 36.00mil 20.00mil 0.0000 20.00mil "3550,2000" ""]
+Via[89.3408mm 59.6178mm 36.00mil 20.00mil 0.0000 20.00mil "2600,300" ""]
+Via[36.8139mm 64.7815mm 36.00mil 20.00mil 0.0000 20.00mil "550,100" ""]
+Via[89.0952mm 31.5056mm 36.00mil 20.00mil 0.0000 20.00mil "2600,1400" ""]
+Via[119.7045mm 64.4988mm 36.00mil 20.00mil 0.0000 20.00mil "3800,100" ""]
 
-Element["" "Jumper, i.e. single row headers" "" "JUMPER10" 1658.00mil 16.3800mm -50.00mil -110.00mil 0 100 ""]
+Element["" "Jumper, i.e. single row headers" "" "JUMPER10" 41.9112mm 16.2549mm -50.00mil -110.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "740,2000" "1" "square,edge2"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
 	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "edge2"]
 	Pin[300.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" "edge2"]
@@ -809,9 +816,9 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER10" 1658.00mil 16.3800mm 
 
 	)
 
-Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 69.1331mm 16.2105mm -50.00mil -110.00mil 0 100 ""]
+Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 68.8462mm 16.2600mm -50.00mil -110.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1800,2000" "1" "square,edge2"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
 	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "edge2"]
 	Pin[300.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" "edge2"]
@@ -828,7 +835,7 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 69.1331mm 16.2105mm -5
 
 	)
 
-Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 92.0185mm 656.98mil -50.00mil -110.00mil 0 100 ""]
+Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 91.6954mm 16.2540mm -50.00mil -110.00mil 0 100 ""]
 (
 	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
@@ -841,19 +848,6 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 92.0185mm 656.98mil -5
 	ElementLine [-50.00mil 50.00mil 750.00mil 50.00mil 10.00mil]
 	ElementLine [750.00mil -50.00mil 750.00mil 50.00mil 10.00mil]
 	ElementLine [-50.00mil -50.00mil 750.00mil -50.00mil 10.00mil]
-	ElementLine [-50.00mil -50.00mil -50.00mil 50.00mil 10.00mil]
-	ElementLine [50.00mil -50.00mil 50.00mil 50.00mil 10.00mil]
-	ElementLine [-50.00mil -50.00mil 50.00mil -50.00mil 10.00mil]
-
-	)
-
-Element["" "Jumper, i.e. single row headers" "" "JUMPER2" 92.9774mm 967.15mil -50.00mil -110.00mil 0 100 ""]
-(
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
-	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
-	ElementLine [-50.00mil 50.00mil 150.00mil 50.00mil 10.00mil]
-	ElementLine [150.00mil -50.00mil 150.00mil 50.00mil 10.00mil]
-	ElementLine [-50.00mil -50.00mil 150.00mil -50.00mil 10.00mil]
 	ElementLine [-50.00mil -50.00mil -50.00mil 50.00mil 10.00mil]
 	ElementLine [50.00mil -50.00mil 50.00mil 50.00mil 10.00mil]
 	ElementLine [-50.00mil -50.00mil 50.00mil -50.00mil 10.00mil]
@@ -862,7 +856,7 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER2" 92.9774mm 967.15mil -5
 
 Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 51.0861mm 64.5636mm -50.00mil -110.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1100,125" "1" "square,edge2"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
 	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "edge2"]
 	Pin[300.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" "edge2"]
@@ -881,7 +875,7 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 51.0861mm 64.5636mm -5
 
 Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 74.0653mm 64.4444mm -50.00mil -110.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2000,100" "1" "square,edge2"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
 	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "edge2"]
 	Pin[300.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" "edge2"]
@@ -900,7 +894,7 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 74.0653mm 64.4444mm -5
 
 Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 96.7579mm 64.2461mm -50.00mil -110.00mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square,edge2"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2900,100" "1" "square,edge2"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
 	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" "edge2"]
 	Pin[300.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" "edge2"]
@@ -919,7 +913,7 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 96.7579mm 64.2461mm -5
 
 Element["" "Header connector, ribbon cable numbering" "" "HEADER36_2" 4608.00mil 16.3800mm 210.00mil -50.00mil 3 100 ""]
 (
-	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "1" "1" "square"]
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3700,2000" "1" "square"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" ""]
 	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "3" "3" ""]
 	Pin[100.00mil 100.00mil 60.00mil 30.00mil 66.00mil 38.00mil "4" "4" ""]
