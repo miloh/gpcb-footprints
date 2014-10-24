@@ -9,7 +9,7 @@ Grid[0.000000 1.2193mm 0.1240mm 1]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 10.00mil 11.00mil 6.00mil]
-Flags("nameonpcb,uniquename,clearnew,snappin")
+Flags("nameonpcb,alldirection,uniquename,clearnew,snappin")
 Groups("1,c:2:3:4:5:6,s:7:8")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -835,7 +835,7 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 1800.00mil 1000.00mil 
 
 	)
 
-Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 2700mil 1000mil -50.00mil -110.00mil 0 100 ""]
+Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 2700.00mil 1000.00mil -50.00mil -110.00mil 0 100 ""]
 (
 	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2700,2000" "1" "square,edge2"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" "edge2"]
@@ -911,7 +911,7 @@ Element["" "Jumper, i.e. single row headers" "" "JUMPER8" 2900.00mil 2900.00mil 
 
 	)
 
-Element["" "Header connector, ribbon cable numbering" "" "HEADER36_2" 3700mil 1000mil 210.00mil -50.00mil 3 100 ""]
+Element["" "Header connector, ribbon cable numbering" "" "HEADER36_2" 3700.00mil 1000.00mil 210.00mil -50.00mil 3 100 ""]
 (
 	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "3700,2000" "1" "square"]
 	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 38.00mil "2" "2" ""]
@@ -959,15 +959,15 @@ Element["" "Header connector, ribbon cable numbering" "" "HEADER36_2" 3700mil 10
 	)
 Layer(1 "top")
 (
-	Line[23.1152mm 67.0548mm 23.1152mm 13.7148mm 6.00mil 12.00mil "clearline"]
-	Line[23.1152mm 13.7148mm 119.6355mm 13.7148mm 6.00mil 12.00mil "clearline"]
-	Line[119.6355mm 13.7148mm 122.1752mm 16.2546mm 6.00mil 12.00mil "clearline"]
-	Line[23.1152mm 67.1049mm 122.1755mm 67.1049mm 6.00mil 12.00mil "clearline"]
-	Line[122.1755mm 67.1049mm 122.1755mm 65.7847mm 6.00mil 12.00mil "clearline"]
-	Line[122.1755mm 65.7847mm 124.7153mm 63.2449mm 6.00mil 12.00mil "clearline"]
-	Line[124.7153mm 63.2449mm 124.7153mm 28.9546mm 6.00mil 12.00mil "clearline"]
-	Line[124.7153mm 28.9546mm 122.1767mm 1040.00mil 6.00mil 12.00mil "clearline"]
-	Line[122.1767mm 1040.00mil 122.1767mm 16.2577mm 6.00mil 12.00mil "clearline"]
+	Line[3.00mil 76.1511mm 3.00mil 22.8111mm 6.00mil 12.00mil "clearline"]
+	Line[3.00mil 22.8111mm 96.5965mm 22.8111mm 6.00mil 12.00mil "clearline"]
+	Line[96.5965mm 22.8111mm 3903.00mil 25.3509mm 6.00mil 12.00mil "clearline"]
+	Line[3.00mil 76.2012mm 99.1365mm 76.2012mm 6.00mil 12.00mil "clearline"]
+	Line[99.1365mm 76.2012mm 99.1365mm 74.8810mm 6.00mil 12.00mil "clearline"]
+	Line[99.1365mm 74.8810mm 4003.00mil 72.3412mm 6.00mil 12.00mil "clearline"]
+	Line[4003.00mil 72.3412mm 4003.00mil 38.0509mm 6.00mil 12.00mil "clearline"]
+	Line[4003.00mil 38.0509mm 99.1377mm 35.5123mm 6.00mil 12.00mil "clearline"]
+	Line[99.1377mm 35.5123mm 99.1377mm 25.3540mm 6.00mil 12.00mil "clearline"]
 )
 Layer(2 "ground")
 (
