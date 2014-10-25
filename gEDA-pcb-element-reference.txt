@@ -14,3 +14,8 @@
 # SFlags is where the pin part gets various values:
 # "", "pin, via, hole, showname, onsolder, square, octogon, edge2"
 #
+
+These elements are used in laouts, but can be converted to the
+Elementline element above in editor or gui
+# Line [ x1 y1 x2 y2 thickness clear "sfflags"]
+# Via  [ X1 y1 thickness  clearance  mask drill  "name" "sfflags?"]
