@@ -788,12 +788,12 @@ Symbol['~' 12.00mil]
 Attribute("PCB::grid::size" "0.0000mm")
 Attribute("PCB::grid::unit" "mil")
 Via[0.0000 3000.00mil 36.00mil 20.00mil 0.0000 20.00mil "origin" ""]
-Via[600.00mil 1000.00mil 36.00mil 20.00mil 0.0000 20.00mil "600,2000" ""]
-Via[3550.00mil 1000.00mil 36.00mil 20.00mil 0.0000 20.00mil "3550,2000" ""]
-Via[2600.00mil 2700.00mil 36.00mil 20.00mil 0.0000 20.00mil "2600,300" ""]
-Via[550.00mil 2900.00mil 36.00mil 20.00mil 0.0000 20.00mil "550,100" ""]
-Via[2600.00mil 1600.00mil 36.00mil 20.00mil 0.0000 20.00mil "2600,1400" ""]
-Via[3800.00mil 2900.00mil 36.00mil 20.00mil 0.0000 20.00mil "3800,100" ""]
+Via[600.00mil 1000.00mil 36.00mil 20.00mil 0.0000 125.00mil "600,2000" ""]
+Via[3550.00mil 1000.00mil 36.00mil 20.00mil 0.0000 125.00mil "3550,2000" ""]
+Via[2600.00mil 2700.00mil 36.00mil 20.00mil 0.0000 125.00mil "2600,300" ""]
+Via[550.00mil 2900.00mil 36.00mil 120.00mil 0.0000 125.00mil "550,100" ""]
+Via[2600.00mil 1600.00mil 36.00mil 20.00mil 0.0000 125.00mil "2600,1400" ""]
+Via[3800.00mil 2900.00mil 36.00mil 20.00mil 0.0000 125.00mil "3800,100" ""]
 
 Element["" "Jumper, i.e. single row headers" "" "JUMPER10" 740.00mil 1000.00mil -50.00mil -110.00mil 0 100 ""]
 (
