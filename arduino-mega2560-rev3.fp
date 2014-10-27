@@ -9,7 +9,7 @@ Grid[500.000000 1.2193mm 0.1240mm 1]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 10.00mil 11.00mil 6.00mil]
-Flags("nameonpcb,alldirection,uniquename,clearnew,snappin")
+Flags("nameonpcb,alldirection,clearnew,snappin")
 Groups("1,c:2:3:4:5:6,s:7:8")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -882,15 +882,6 @@ Via[1540.00mil 1000.00mil 60.00mil 30.00mil 66.00mil 38.00mil "9" ""]
 Via[1640.00mil 1000.00mil 60.00mil 30.00mil 66.00mil 38.00mil "10" ""]
 Layer(1 "top")
 (
-	Line[99.1377mm 35.5123mm 99.1377mm 25.3540mm 6.00mil 12.00mil "clearline"]
-	Line[4003.00mil 38.0509mm 99.1377mm 35.5123mm 6.00mil 12.00mil "clearline"]
-	Line[4003.00mil 72.3412mm 4003.00mil 38.0509mm 6.00mil 12.00mil "clearline"]
-	Line[99.1365mm 74.8810mm 4003.00mil 72.3412mm 6.00mil 12.00mil "clearline"]
-	Line[99.1365mm 76.2012mm 99.1365mm 74.8810mm 6.00mil 12.00mil "clearline"]
-	Line[3.00mil 76.2012mm 99.1365mm 76.2012mm 6.00mil 12.00mil "clearline"]
-	Line[96.5965mm 22.8111mm 3903.00mil 25.3509mm 6.00mil 12.00mil "clearline"]
-	Line[3.00mil 22.8111mm 96.5965mm 22.8111mm 6.00mil 12.00mil "clearline"]
-	Line[3.00mil 76.1511mm 3.00mil 22.8111mm 6.00mil 12.00mil "clearline"]
 )
 Layer(2 "ground")
 (
@@ -960,4 +951,13 @@ Layer(10 "silk")
 	Line[690.00mil 950.00mil 690.00mil 1050.00mil 10.00mil 0.0000 ""]
 	Line[790.00mil 950.00mil 790.00mil 1050.00mil 10.00mil 0.0000 ""]
 	Line[690.00mil 950.00mil 790.00mil 950.00mil 10.00mil 0.0000 ""]
+	Line[99.1377mm 35.5123mm 99.1377mm 25.3540mm 6.00mil 12.00mil "clearline"]
+	Line[4003.00mil 38.0509mm 99.1377mm 35.5123mm 6.00mil 12.00mil "clearline"]
+	Line[4003.00mil 72.3412mm 4003.00mil 38.0509mm 6.00mil 12.00mil "clearline"]
+	Line[99.1365mm 74.8810mm 4003.00mil 72.3412mm 6.00mil 12.00mil "clearline"]
+	Line[99.1365mm 76.2012mm 99.1365mm 74.8810mm 6.00mil 12.00mil "clearline"]
+	Line[3.00mil 76.2012mm 99.1365mm 76.2012mm 6.00mil 12.00mil "clearline"]
+	Line[96.5965mm 22.8111mm 3903.00mil 25.3509mm 6.00mil 12.00mil "clearline"]
+	Line[3.00mil 22.8111mm 96.5965mm 22.8111mm 6.00mil 12.00mil "clearline"]
+	Line[3.00mil 76.1511mm 3.00mil 22.8111mm 6.00mil 12.00mil "clearline"]
 )
