@@ -1,7 +1,6 @@
 
 Element["" "" "" "" 0.0000 3000.00mil 0.0000 0.0000 0 100 ""]
 (
-	Pin[0.0000 0.0000 36.00mil 20.00mil 42.00mil 20.00mil "" "origin" "edge2"]
 	ElementLine [99.1377mm -40.6877mm 99.1377mm -50.8460mm 6.00mil]
 	ElementLine [4003.00mil -38.1491mm 99.1377mm -40.6877mm 6.00mil]
 	ElementLine [4003.00mil -3.8588mm 4003.00mil -38.1491mm 6.00mil]
