@@ -1,6 +1,6 @@
 # The following elements can be used to create a gEDA pcb layout footprint
 
-# Element [ SFlags "Desc" "Name" "Value" MX MY TX TY TDir Scale TSFlags](
+# Element [ SFlags "Desc" "pcb-name" "value" MX MY TX TY TDir Scale TSFlags](
 # Pad        [ x1 y1 x2 y2 thickness clear mask "name" "pad_number" sflags]
 # Pin        [ rX  rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
 # ElementLine[ rX1 rY1 rX2 rY2  silk thicknessmil]
