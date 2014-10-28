@@ -1,14 +1,26 @@
-
+# Arduino Mega2560, Just the Silk
 Element["" "" "" "" 0.0000 3000.00mil 0.0000 0.0000 0 100 ""]
 (
-	ElementLine [99.1377mm -40.6877mm 99.1377mm -50.8460mm 6.00mil]
-	ElementLine [4003.00mil -38.1491mm 99.1377mm -40.6877mm 6.00mil]
-	ElementLine [4003.00mil -3.8588mm 4003.00mil -38.1491mm 6.00mil]
-	ElementLine [99.1365mm -1.3190mm 4003.00mil -3.8588mm 6.00mil]
-	ElementLine [99.1365mm 0.0012mm 99.1365mm -1.3190mm 6.00mil]
-	ElementLine [3.00mil 0.0012mm 99.1365mm 0.0012mm 6.00mil]
-	ElementLine [96.5965mm -53.3889mm 3903.00mil -50.8491mm 6.00mil]
-	ElementLine [3.00mil -53.3889mm 96.5965mm -53.3889mm 6.00mil]
-	ElementLine [3.00mil -0.0489mm 3.00mil -53.3889mm 6.00mil]
+	ElementLine [0.0mil 0.0mil 0.0mil -125mil 10.00mil]
+	ElementLine [0.0mil -475.0mil 0.0mil -1275mil 10.00mil]
+	ElementLine [0.0mil -1725.0mil 0.0mil -2100mil 10.00mil]
+	ElementLine [0.0mil 0.0mil 3900mil 0.0mil 10.00mil]
+	ElementLine [0.0mil -2100mil 3800mil -2100mil 10.00mil]
+	ElementLine [3800mil -2100mil 3900mil -2000mil 10.00mil]
+	ElementLine [3900mil -2000mil 3900mil -1600mil 10.00mil]
+	ElementLine [3900mil -1600mil 4000mil -1500mil 10.00mil]
+	ElementLine [4000mil -1500mil 4000mil -150mil 10.00mil]
+	ElementLine [4000mil -150mil 3900mil -50mil 10.00mil]
+	ElementLine [3900mil -50mil 3900mil 0mil 10.00mil]
+	ElementLine [3900.00mil 0.0mil 0.0mil 0.0mil 10.00mil]
 
+	ElementLine [-75mil -125mil 450mil -125mil 10.00mil] 
+	ElementLine [-75mil -475mil 450mil -475mil 10.00mil] 
+	ElementLine [-75mil -125mil -75mil -475mil 10.00mil] 
+	ElementLine [450mil -125mil 450mil -475mil 10.00mil] 
+
+	ElementLine [-250mil -1275mil 375mil -1275mil 10.00mil] 
+	ElementLine [-250mil -1725mil 375mil -1725mil 10.00mil] 
+	ElementLine [-250mil -1275mil -250mil -1725mil 10.00mil] 
+	ElementLine [375mil -1275mil 375mil -1725mil 10.00mil] 
 	)
