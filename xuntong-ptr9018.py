@@ -1,4 +1,7 @@
 #!/usr/bin/python
+# R. Miloh Alexander
+# Use: unrestricted with attribution
+
 import footgen
 
 f = footgen.Footgen("xuntong-ptr9018")
