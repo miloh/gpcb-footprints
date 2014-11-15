@@ -1,0 +1,3 @@
+[submodule "footgen"]
+	path = footgen
+	url = git@github.com:miloh/footgen.git
