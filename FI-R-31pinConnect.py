@@ -11,10 +11,10 @@ f.pins = 31
 f.pitch = 0.5 
 # following values are from datasheet
 # for 31 pin device
-dimA = 21
-dimB = 15
+dimA = 21.0
+dimB = 15.0
 dimC = 25.35
-dimD = 4
+dimD = 4.0
 dimE = None
 dimF = 25.95
 dimG = 24.75
@@ -27,25 +27,29 @@ dimH = 27.85
 f.height = dimF
 f.width = 4.35 
 f.padheight = 0.25
-f.padwidth = 0.7 
+f.padwidth = 1.55 
 f.silkboxwidth  = 29.95
-f.silkboxheight = 15
+f.silkboxheight = 15.0
 # add_pad(self,name,x,y,xsize,ysize)
 # add smt pads for the case (2 on the end and it looks like 4 support tabs /10
 # conductors, along the length of the connector)
 
 #signal pads
 #f.rowofpads([dimH/2,5.1/2-1.55/2],"right",1,31)
-f.rowofpads([0,-3.75+f.padwidth/2],"right",1,31)
+f.rowofpads([0,-3.75/2-f.padwidth/2],"right",1,31)
 # header case gnds at the back
-f.add_pad("gnd mnt1",-dimA/2 + 3 + dimD , 4.35/2  ,1.55,1.3) 
-#f.add_pad("gnd mnt2",-dimA/2 + 3 + dimD*2 , -4.35/2 ,1.55,1.3) 
-f.add_pad("gnd mnt3",+dimA/2 - 3 - dimD , 4.35/2  ,1.55,1.3) 
-#f.add_pad("gnd mnt4",+dimA/2 - 3 - dimD*2 , -4.35/2 ,1.55,1.3) 
+f.add_pad("gnd mnt1",-dimB/2      ,  3.75/2  ,1.3,1.5) 
+f.add_pad("gnd mnt2",-dimB/2 + dimD , 3.75/2 ,1.3,1.5) 
+f.add_pad("gnd mnt3",+dimB/2        ,  3.75/2  ,1.3,1.5) 
+f.add_pad("gnd mnt4",+dimB/2 - dimD , 3.75/2 ,1.3,1.5) 
 # four corner gnds
-f.add_pad("gnd mnt left ",-dimA/2,4.35/2+1.55/2,1.55,1.3) 
-f.add_pad("gnd mnt left ",-dimA/2,-4.35/2-1.55/2,1.55,1.3) 
-f.add_pad("gnd mnt right",dimA/2,4.35/2+1.55/2,1.55,1.3) 
-f.add_pad("gnd mnt right",dimA/2,-4.35/2-1.55/2,1.55,1.3) 
+#f.add_pad("gnd mnt left ",-dimA/2,3.75/2+1.55/2,2.50,1.55) 
+f.add_pad("gnd mnt left ",-dimA/2,-3.75/2-1.55/2,2.50,1.55) 
+#f.add_pad("gnd mnt right",dimA/2,3.75/2+1.55/2,2.50,1.55) 
+f.add_pad("gnd mnt right",dimA/2,-3.75/2-1.55/2,2.50,1.55) 
+
+f.add_pad("end pad right",-dimG/2-2.05/2,3.75/2-2.5/2,2.05,2.50) 
+f.add_pad("end pad left",dimG/2+2.05/2,3.75/2-2.5/2,2.05,2.50) 
+
 f.finish()
 
