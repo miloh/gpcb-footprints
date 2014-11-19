@@ -1,0 +1,9 @@
+Element["" "43650-042X" "" "" 1000 1000 0nm -1000000nm 0 100 ""]
+(
+	Pad[-4500000nm -4055000nm -4500000nm -2785000nm 1270000nm 609600nm 1422400nm "1" "1" "square"]
+	Pad[-1500000nm -4055000nm -1500000nm -2785000nm 1270000nm 609600nm 1422400nm "2" "2" "square"]
+	Pad[1500000nm -4055000nm 1500000nm -2785000nm 1270000nm 609600nm 1422400nm "3" "3" "square"]
+	Pad[4500000nm -4055000nm 4500000nm -2785000nm 1270000nm 609600nm 1422400nm "4" "4" "square"]
+	Pad[-9275000nm 0nm -7495000nm 0nm 1650000nm 609600nm 1802400nm "end pad left " "end pad left " "square"]
+	Pad[7495000nm 0nm 9275000nm 0nm 1650000nm 609600nm 1802400nm "end pad right" "end pad right" "square"]
+)
