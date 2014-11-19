@@ -1,12 +1,12 @@
-#!/usr/bin/python
+#/usr/bin/python
 # R. Miloh Alexander
 # Use: unrestricted with attribution
 
 import footgen
 
 f = footgen.Footgen("xuntong-ptr9018")
-f.generator.clearance = 0.33
-f.generator.mask_clearance = 0.125 
+f.generator.clearance = 0.3048
+f.generator.mask_clearance = 0.1524
 f.pins = 30
 f.pitch = 1.27 # mm
 f.width = 23
