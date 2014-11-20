@@ -18,22 +18,23 @@ for i in range(len(MMF_names)):
 f.generator.clearance = 0.3048
 f.generator.mask_clearance = 0.1524
 f.pitch = 3.00
-f.width = 4.37+1.20
+f.width = 4.37
 f.padheight = 1.27
 f.padwidth = 2.54
 f.silkboxwidth  = f.width + 2
 f.silkboxheight = f.height + 2
+f.box_corners((f.height+2)/2,f.width/2,-(f.height+2)/2,-(f.width+f.padwidth))
+f.silk_line(-(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch,-(f.width+f.padwidth/2),-(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch+1.0,-(f.width+f.padwidth))
+f.silk_line(-(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch,-(f.width+f.padwidth/2),-(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch-1.0,-(f.width+f.padwidth))
 # add_pad(self,name,x,y,xsize,ysize)
 # add smt pads for the case (2 on the end and it looks like 4 support tabs /10
 # conductors, along the length of the connector)
-print f
-print f.pins
 
 #signal pads
-f.rowofpads([0,-2.15-2.54/2],"right",1,f.pins)
+f.rowofpads([0,-2.15-2.54/2],"left",1,f.pins)
 
 # header case gnds at the back
-f.add_pad("end pad left ",-f.height/2 + 3.43/2, 0  ,3.43,1.65) 
-f.add_pad("end pad right",f.height/2  - 3.43/2, 0  ,3.43,1.65) 
+f.add_pad("MNT",-f.height/2 + 3.43/2, 0  ,3.43,1.65) 
+f.add_pad("MNT",f.height/2  - 3.43/2, 0  ,3.43,1.65) 
 f.finish()
 
