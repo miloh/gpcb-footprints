@@ -30,6 +30,7 @@ f.padheight = 0.25
 f.padwidth = 1.55 
 f.silkboxwidth  = 29.95
 f.silkboxheight = 15.0
+f.silkbox(w=f.silkboxwidth,h=f.silkboxheight)
 # add_pad(self,name,x,y,xsize,ysize)
 # add smt pads for the case (2 on the end and it looks like 4 support tabs /10
 # conductors, along the length of the connector)
