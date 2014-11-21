@@ -11,7 +11,7 @@ MMF_dimA = [9.65,12.65,15.65,18.65,21.65,24.65,27.65,30.65,33.65,36.65,39.65]
 MMF_dimB = [ 3.00,6.00,9.00,12.00,15.00,18.00,21.00,24.00,27.00,30.00,33.00]
 MMF_dimC = [14.20,17.20,20.20,23.20,26.20,29.20,32.20,35.20,38.20,41.20,44.20]
 for i in range(len(MMF_names)):
-    f = footgen.Footgen(MMF_names[i])
+    f = footgen.Footgen("Molex-"+MMF_names[i])
     f.pins = MMF_pins[i] 
     f.height = MMF_dimC[i]
     f.generator.clearance = 0.3048
