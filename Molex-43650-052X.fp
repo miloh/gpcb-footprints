@@ -1,4 +1,4 @@
-Element["" "43650-052X" "" "" 1000 1000 0nm -1000000nm 0 100 ""]
+Element["" "Molex-43650-052X" "" "" 1000 1000 0nm -1000000nm 0 100 ""]
 (
 	ElementLine [12600000nm 2185000nm -12600000nm 2185000nm 150000nm]
 	ElementLine [-12600000nm 2185000nm -12600000nm -6910000nm 150000nm]
@@ -11,6 +11,6 @@ Element["" "43650-052X" "" "" 1000 1000 0nm -1000000nm 0 100 ""]
 	Pad[0nm -4055000nm 0nm -2785000nm 1270000nm 609600nm 1422400nm "3" "3" "square"]
 	Pad[-3000000nm -4055000nm -3000000nm -2785000nm 1270000nm 609600nm 1422400nm "4" "4" "square"]
 	Pad[-6000000nm -4055000nm -6000000nm -2785000nm 1270000nm 609600nm 1422400nm "5" "5" "square"]
-	Pad[-10775000nm 0nm -8995000nm 0nm 1650000nm 609600nm 1802400nm "GND" "GND" "square"]
-	Pad[8995000nm 0nm 10775000nm 0nm 1650000nm 609600nm 1802400nm "GND" "GND" "square"]
+	Pad[-10775000nm 0nm -8995000nm 0nm 1650000nm 609600nm 1802400nm "MNT" "MNT" "square"]
+	Pad[8995000nm 0nm 10775000nm 0nm 1650000nm 609600nm 1802400nm "MNT" "MNT" "square"]
 )
