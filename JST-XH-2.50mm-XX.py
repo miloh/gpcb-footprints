@@ -4,7 +4,9 @@
 
 import footgen
 
+# implements SMT side entry type only!!! through hole components still needed to be added
 # following values are from datasheet
+#
 XH_basename = "JST-XHP-"
 XH_pins = [1,2,2,3,4,5,6,6,7,8,9,10,11,12,13,14,15,16,20] 
 XH_special = ["","","(10.0)-U","","","","","(5.0)-U","","","","","","","","","","",""] 
@@ -17,16 +19,19 @@ for i in range(len(XH_pins)):
     f.height = XH_dimC[i]
     f.generator.clearance = 0.3048
     f.generator.mask_clearance = 0.1524
-    f.pitch = 3.00
-    f.width = 4.37
-    f.padheight = 1.27
-    f.padwidth = 2.54
-    f.box_corners((f.height+2)/2,f.width/2,-(f.height+2)/2,-(f.width+f.padwidth))
-    f.silk_line(-(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch,-(f.width+f.padwidth/2),-(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch+1.0,-(f.width+f.padwidth))
-    f.silk_line(-(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch,-(f.width+f.padwidth/2),-(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch-1.0,-(f.width+f.padwidth))
+    f.pitch = 2.50
+    f.width = 13.0
+    f.padheight = 1.30
+    f.padwidth = 11-6.5  
+    f.box_corners( (f.pitch*f.pins-1)/2+2.3+1.8+1 , (f.width+2)/2 , -(f.pitch*f.pins-1)/2-2.3-1.8-1 , (-(f.width+2)/2))
+    # should create a function for creating a pin1 diamond
+    f.silk_line( -(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch , -((f.width+1)/2) , -(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch+f.padheight/2 , -(f.width+2)/2)
+    f.silk_line( -(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch , -((f.width+1)/2) , -(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch-f.padheight/2 , -(f.width+2)/2)
+    f.silk_line( -(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch , -((f.width+3)/2) , -(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch+f.padheight/2 , -(f.width+2)/2)
+    f.silk_line( -(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch , -((f.width+3)/2) , -(f.pitch*(f.pins-1))/2+(f.pins-1)*f.pitch-f.padheight/2 , -(f.width+2)/2)
     #signal pads
-    f.rowofpads([0,-2.15-2.54/2],"left",1,f.pins)
-    # header case gnds at the back
-    f.add_pad("MNT",-f.height/2 + 3.43/2, 0  ,3.43,1.65) 
-    f.add_pad("MNT",f.height/2  - 3.43/2, 0  ,3.43,1.65) 
+    f.rowofpads([ 0 , -f.width/2+f.padwidth/2],"left",1,f.pins)
+    #side wing gnds
+    f.add_pad("MNT", -(f.pitch*f.pins-1)/2-2.3-1.8/2 , f.width/2-3.9/2 ,1.8,3.9) 
+    f.add_pad("MNT", +(f.pitch*f.pins-1)/2+2.3+1.8/2 , f.width/2-3.9/2 ,1.8,3.9) 
     f.finish()
