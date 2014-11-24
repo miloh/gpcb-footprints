@@ -1,4 +1,5 @@
-Element["" "LED_1206" "LED_1206" "LED_1206" 28.0000mm 67.0000mm -118.11mil -118.11mil 0 100 ""]
+
+Element["" "LED_1206" "LED_1206" "LED_1206" 3.2707mm 1.5207mm 2.9925mm -1.1500mm 2 100 ""]
 (
 	Attribute("gedasymbols::url" "http://www.gedasymbols.org/user/kai_martin_knaak/footprints/discretes/diodes/LED_1206.fp")
 	Pad[-68.90mil 0.0000 -68.90mil 0.0000 80.00mil 39.37mil 83.94mil "cathode" "2" "square"]
