@@ -1,5 +1,5 @@
 
-Element["" "" "" "" 0.0000 3000.00mil 0.0000 0.0000 0 100 ""]
+Element["" "arduino-mega2560-rev3-pinsonly" "" "" 0.0000 3000.00mil 0.0000 0.0000 0 100 ""]
 (
 	Pin[600.00mil -2000.00mil 129.00mil 20.00mil 135.00mil 125.00mil "" "" "edge2"]
 	Pin[3550.00mil -2000.00mil 129.00mil 20.00mil 135.00mil 125.00mil "" "" "edge2"]
