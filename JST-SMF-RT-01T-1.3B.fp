@@ -10,7 +10,7 @@
 Element[ "" "JST SMF Disconnectable Crimp style connector for 1.0mm dia pin" "RT-01T-1.0B"  "" 2mm  2mm 1mm -1mm 0 100 ""]
 (
 # Pin        [ rX  rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
-	Pin [0.00mm  0.00mm 1.600mm 0.200mm 1.725mm 1.3mm "1" "1" ""]
+	Pin [0.00mm  0.00mm 1.60mm 0.152mm 1.725mm 1.3mm "1" "1" ""]
 
 #	ElementArc [ rX rY Width Height StartAngle DeltaAngle Thickness]
 #	ElementLine [-2.00mil -160.00mil 150.00mil -160.00mil 10.00mil]
