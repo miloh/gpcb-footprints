@@ -19,3 +19,4 @@ These elements are used in layouts, but can be converted to the
 ElementLine element above in editor or gui
 # Line [ x1 y1 x2 y2 thickness clear "sfflags"]
 # Via  [ X1 y1 thickness  clearance  mask drill  "name" "sfflags?"]
+# Arc[43.7965mm 9.9086mm 98.00mil 98.00mil 5.00mil 12.00mil 180 90 "clearline"]
