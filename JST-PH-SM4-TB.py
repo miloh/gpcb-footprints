@@ -4,7 +4,7 @@
 
 import footgen
 
-# implements board headers for JST PH type crimping wire to borad header connects
+# implements board headers for JST PH type crimping wire to board header connects
 # following values are from datasheet ePH.pdf available at
 # http://www.jst-mfg.com/product/pdf/eng/ePH.pdf
 
