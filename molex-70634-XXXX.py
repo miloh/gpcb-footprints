@@ -46,7 +46,7 @@ for i in range(len(molex_70634_pins)):
 
     #signal pads
     f.rowofpads([ 0 , 0],"left",1,f.pins)
-    #side wing gnds
-    f.add_via(pin="circle" ,x= -f.height/2, y= -10.69, size= 3.404 ,pad=3.404) 
-    f.add_via(pin="masked" ,x= f.height/2, y= -10.69, size= 3.404,pad=3.404) 
+    #locating mounts 
+    f.add_mount(pin="locating tab" ,x= -f.height/2, y= -10.69, size= 3.404 ,pad=3.404) 
+    f.add_mount(pin="locating tab" ,x= f.height/2, y= -10.69, size= 3.404,pad=3.404) 
     f.finish()
