@@ -2,6 +2,12 @@
 # R. Miloh Alexander
 # Use: unrestricted with attribution
 
+# Implements board headers for Molex micro fit 3 connects
+# Micro Fit 3 is a 3mm pitch 5A max crimpping wire-2-board and board-2-board
+# connect system originally designed for 'glow-wire' heating applications, that
+# has found extended life and use in the reprap and desktop 3DP world
+# Following values are from Molex datasheet
+# http://www.molex.com/pdm_docs/sd/436500215_sd.pdf
 import footgen
 
 MMF_basename = "Molex-43650-{0}2X"
