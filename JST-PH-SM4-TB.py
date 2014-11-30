@@ -10,12 +10,12 @@ import footgen
 
 # JST SMT PH Top Entry Headers
 PH_basename = "JST-{0}{1}B-PH-SM4-TB"
-PH_EntryType = ["B","S"] # Top entry type
+PH_EntryType = {'Top':'B','Side':'S'}
 PH_pins = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] 
 PH_dimA = [2.0,4.0,6.0,8.0,10.0,12.0,14.0,16.0,18.0,20.0,22.0,24.0,26.0,28.0,30.0] 
-PH_dimB = [7.95,9.95,11.95,13.95,15.95,17,95,19.95,21.95,23.95,25.95,27.95,29.95,31.95,33.95,35.95]
+PH_dimB = [7.95,9.95,11.95,13.95,15.95,17.95,19.95,21.95,23.95,25.95,27.95,29.95,31.95,33.95,35.95]
 for i in range(len(PH_pins)):
-    f = footgen.Footgen(PH_basename.format(PH_EntryType[0],PH_pins[i]))
+    f = footgen.Footgen(PH_basename.format(PH_EntryType['Top'],PH_pins[i]))
     f.pins = PH_pins[i] 
     f.height = PH_dimA[i]
     f.generator.clearance = 0.3048
@@ -47,16 +47,13 @@ for i in range(len(PH_pins)):
     f.add_pad("MNT", +PH_dimA[i]/2+mntpad_x_offset+mntpadheight/2 , +f.padwidth/2-f.width+mntpad_y_offset+mntpadwidth/2 ,mntpadheight,mntpadwidth) 
     f.finish()
 
-
-# To add:
-
 # JST SMT PH Side Entry Headers
-# Reuse the basename and entry type from above 
+# Reuse the basename and EntryType from above 
 PH_pins = [2,3,4,5,6,7,8,9,10,11,12,13,14,15] 
 PH_dimA = [2.0,4.0,6.0,8.0,10.0,12.0,14.0,16.0,18.0,20.0,22.0,24.0,26.0,28.0] 
-PH_dimB = [7.9,9.9,11.9,13.9,15.9,17.9,19.9,21.9,23.9,25.9,27.9,29.9,31.9,33.9]
+PH_dimB = [7.9,9.9,11.9,13.9,15.9,17.9,19.9,21.9,23.9,25.9,27.9,29.9,31.9,33.9,35.95]
 for i in range(len(PH_pins)):
-    f = footgen.Footgen(PH_basename.format(PH_EntryType[1],PH_pins[i]))
+    f = footgen.Footgen(PH_basename.format(PH_EntryType['Side'],PH_pins[i]))
     f.pins = PH_pins[i] 
     f.height = PH_dimA[i]
     f.generator.clearance = 0.3048
