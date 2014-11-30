@@ -13,7 +13,7 @@
 
 import footgen
 
-FI_RE_basename ="FI-R-E-{0}S-{1}"
+FI_RE_basename ="JAE-FI-R-E-{0}S-{1}"
 FI_RE_EntryTypes = {'Top':'VF','Side':"HF"} #HF Horizontal (side entry) and VF Vertical 
 FI_RE_contacts = [21, 31, 41, 51]
 #
