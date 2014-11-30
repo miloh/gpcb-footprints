@@ -37,8 +37,8 @@ for i in range(len(FI_RE_contacts)):
     f.padwidth = 1.55 
     f.box_corners(f.height/2,-f.padwidth,-f.height/2,f.width+f.padwidth)
     f.rowofpads([0,0],"right",1,f.pins) #all contacts
-    f.silk_diamond(-(f.pitch*(f.pins-1))/2,-f.padwidth,f.padheight,0.25) # Pin1 diamond mark
-    f.add_pad("Prohibition",0,f.width/2,0.025,0.025)# clearance needs to added float(FI_RE_VF_dimF[i]),4.35
+    f.silk_diamond(-(f.pitch*(f.pins-1))/2,f.width+f.padwidth,f.padheight,0.25) # Pin1 diamond mark
+    f.add_pad("Prohibition",0,f.width/2,f.height/2,0.000001)# clearance needs to added float(FI_RE_VF_dimF[i]),4.35
 # GND connection pads for the HF and VF version 
     f.add_pad("GND MNT",-float(FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
     f.add_pad("GND MNT",+float(FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
@@ -90,8 +90,8 @@ for i in range(len(FI_RE_contacts)):
     f.silk_line(-f.height/2, f.width, -f.height/2, f.width+f.padwidth)
     f.silk_line(f.height/2, f.width, f.height/2, f.width+f.padwidth)
 
-    f.silk_diamond(float(-FI_RE_VF_dimB[i])/2,-f.padwidth,f.padheight,0.25) # Pin1 diamond mark
-    f.add_pad("Prohibition",0,f.width/2,0.025,0.025)# clearance needs to added float(FI_RE_VF_dimF[i]),4.35
+    f.silk_diamond(float(-FI_RE_VF_dimB[i])/2,f.width+f.padwidth,f.padheight,0.25) # Pin1 diamond mark
+    f.add_pad("Prohibition",0,f.width/2,f.height/2,0.0001)# clearance needs to added float(FI_RE_VF_dimF[i]),4.35
 # GND connection pads for the HF and VF versions
     f.add_pad("GND MNT",float(-FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
     f.add_pad("GND MNT",float(+FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
