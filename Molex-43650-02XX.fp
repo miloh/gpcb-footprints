@@ -1,4 +1,4 @@
-Element["" "Molex-43650-022X" "" "" 1000 1000 0nm -1000000nm 0 100 ""]
+Element["" "Molex-43650-02XX" "" "" 1000 1000 0nm -1000000nm 0 100 ""]
 (
 	ElementLine [8100000nm 2185000nm -8100000nm 2185000nm 150000nm]
 	ElementLine [-8100000nm 2185000nm -8100000nm -6910000nm 150000nm]
