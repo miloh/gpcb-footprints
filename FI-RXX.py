@@ -27,18 +27,26 @@ FI_RE_VF_dimG = [19.75, 24.75, 29.75, 34.75]
 FI_RE_VF_dimH = [21.85, 26.85, 31.85, 36.85]
 for i in range(len(FI_RE_contacts)):
     f = footgen.Footgen(FI_RE_basename.format(FI_RE_contacts[i],FI_RE_EntryTypes['Top']))
-    f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.254
+    f.generator.clearance = 0.204
+    f.generator.mask_clearance = 0.102
     f.pins = FI_RE_contacts[i] 
     f.pitch = 0.5 
     f.height = FI_RE_VF_dimF[i]
     f.width = 5.1 
     f.padheight = 0.25
     f.padwidth = 1.55 
-    f.box_corners(f.height/2,-f.padwidth,-f.height/2,f.width+f.padwidth)
     f.rowofpads([0,0],"right",1,f.pins) #all contacts
+#   silk component outlines
+# horizontal line segments constructing corners near contacts
+    f.silk_line(-FI_RE_VF_dimF[i]/2, f.padwidth/4, -FI_RE_VF_dimG[i]/2, f.padwidth/4)
+    f.silk_line(FI_RE_VF_dimF[i]/2, f.padwidth/4,  FI_RE_VF_dimG[i]/2, f.padwidth/4)
+# vertical line segments constructing corners near contacts
+    f.silk_line(-FI_RE_VF_dimF[i]/2, f.padwidth/4, -FI_RE_VF_dimF[i]/2, f.width)
+    f.silk_line(FI_RE_VF_dimF[i]/2, f.padwidth/4, FI_RE_VF_dimF[i]/2, f.width)
+# segments outlining prohibition area at cable entry
+    f.silk_line(-FI_RE_VF_dimF[i]/2, f.width, -FI_RE_VF_dimG[i]/2,f.width)
+    f.silk_line(FI_RE_VF_dimF[i]/2, f.width, FI_RE_VF_dimG[i]/2,f.width)
     f.silk_diamond(-(f.pitch*(f.pins-1))/2,f.width+f.padwidth,f.padheight,0.25) # Pin1 diamond mark
-    f.add_pad("Prohibition",0,f.width/2,f.height/2,0.000001)# clearance needs to added float(FI_RE_VF_dimF[i]),4.35
 # GND connection pads for the HF and VF version 
     f.add_pad("GND MNT",-float(FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
     f.add_pad("GND MNT",+float(FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
@@ -72,8 +80,8 @@ FI_RE_HF_dimG = [19.75, 24.75, 29.75, 34.75]
 FI_RE_HF_dimH = [22.85, 27.85, 32.85, 37.85]
 for i in range(len(FI_RE_contacts)):
     f = footgen.Footgen(FI_RE_basename.format(FI_RE_contacts[i],FI_RE_EntryTypes['Side']))
-    f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.254
+    f.generator.clearance = 0.204
+    f.generator.mask_clearance = 0.102
     f.pins = FI_RE_contacts[i] 
     f.pitch = 0.5 
     f.height = FI_RE_HF_dimG[i]
@@ -81,17 +89,20 @@ for i in range(len(FI_RE_contacts)):
     f.padheight = 0.25
     f.padwidth = 1.55 
     f.rowofpads([0,0],"right",1,f.pins) #all contacts 
-#    f.box_corners(f.height/2,-f.padwidth,-f.height/2,f.width+f.padwidth)
-    f.silk_line(-f.height/2,-f.padwidth,f.height/2,-f.padwidth)
-    f.silk_line(-f.height/2,-f.padwidth,-f.height/2,f.padwidth/2)
-    f.silk_line(f.height/2,-f.padwidth,f.height/2,f.padwidth/2)
-
-    f.silk_line(-f.height/2, f.width+f.padwidth,f.height/2,f.width+f.padwidth)
-    f.silk_line(-f.height/2, f.width, -f.height/2, f.width+f.padwidth)
-    f.silk_line(f.height/2, f.width, f.height/2, f.width+f.padwidth)
-
+#   silk component outlines
+# horizontal line segments constructing corners near contacts
+    f.silk_line(-FI_RE_HF_dimF[i]/2, f.padwidth/4, float(-FI_RE_HF_dimA[i])/2-2.5/2-0.5, f.padwidth/4)
+    f.silk_line(FI_RE_HF_dimF[i]/2, f.padwidth/4, float(FI_RE_HF_dimA[i])/2+2.5/2+0.5, f.padwidth/4)
+# vertical line segments constructing corners near contacts
+    f.silk_line(-FI_RE_HF_dimF[i]/2, f.padwidth/4, -FI_RE_HF_dimF[i]/2, f.padwidth/2)
+    f.silk_line(FI_RE_HF_dimF[i]/2, f.padwidth/4, FI_RE_HF_dimF[i]/2, f.padwidth/2)
+# segments outlining prohibition area at cable entry
+    f.silk_line(-FI_RE_VF_dimF[i]/2, f.width, -FI_RE_VF_dimG[i]/2,f.width)
+    f.silk_line(FI_RE_VF_dimF[i]/2, f.width, FI_RE_VF_dimG[i]/2,f.width)
+    f.silk_line(-FI_RE_VF_dimF[i]/2, f.width, -FI_RE_VF_dimF[i]/2, f.width-f.padwidth/4)
+    f.silk_line(FI_RE_VF_dimF[i]/2, f.width, FI_RE_VF_dimF[i]/2, f.width-f.padwidth/4)
+    f.silk_line(-float(FI_RE_HF_dimB[i])/2+1.3, f.width,float(FI_RE_HF_dimB[i])/2-1.3,f.width)
     f.silk_diamond(float(-FI_RE_VF_dimB[i])/2,f.width+f.padwidth,f.padheight,0.25) # Pin1 diamond mark
-    f.add_pad("Prohibition",0,f.width/2,f.height/2,0.0001)# clearance needs to added float(FI_RE_VF_dimF[i]),4.35
 # GND connection pads for the HF and VF versions
     f.add_pad("GND MNT",float(-FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
     f.add_pad("GND MNT",float(+FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
