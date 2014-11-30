@@ -40,15 +40,8 @@ for i in range(len(PH_pins)):
     f.silk_line( +PH_dimB[i]/2 , f.padwidth/2-2.0, +PH_dimB[i]/2 , f.padwidth/2+0.25 )
 #signal pads
     f.rowofpads([ 0 , 0],"right",1,f.pins)
-# should create a function for creating a pin1 diamond mark
-# fxn should check the f.rowofopads.whichway value to determine default location
-    diamond_xcenter = -PH_dimA[i]/2
-    diamond_ycenter = f.padwidth/2-7.5
-    diamond_size = 0.5
-    f.silk_line(diamond_xcenter - diamond_size, diamond_ycenter, diamond_xcenter, diamond_ycenter + diamond_size)
-    f.silk_line(diamond_xcenter - diamond_size, diamond_ycenter, diamond_xcenter, diamond_ycenter - diamond_size)
-    f.silk_line(diamond_xcenter + diamond_size, diamond_ycenter, diamond_xcenter, diamond_ycenter + diamond_size)
-    f.silk_line(diamond_xcenter + diamond_size, diamond_ycenter, diamond_xcenter, diamond_ycenter - diamond_size)
+# diamond mark at pin1
+    f.silk_diamond(-PH_dimA[i]/2,f.padwidth/2-7.5,0.5,0.5)
 #side wing gnds
     f.add_pad("MNT", -PH_dimA[i]/2-mntpad_x_offset-mntpadheight/2 , +f.padwidth/2-f.width+mntpad_y_offset+mntpadwidth/2 ,mntpadheight,mntpadwidth) 
     f.add_pad("MNT", +PH_dimA[i]/2+mntpad_x_offset+mntpadheight/2 , +f.padwidth/2-f.width+mntpad_y_offset+mntpadwidth/2 ,mntpadheight,mntpadwidth) 
