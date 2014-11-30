@@ -3,10 +3,20 @@
 # Use: unrestricted with attribution
 
 # Implements board headers for Molex micro fit 3 connects
-# Micro Fit 3 is a 3mm pitch 5A max crimpping wire-2-board and board-2-board
+# Micro Fit 3 is a 3mm pitch 5A max crimping wire-2-board and wire-2-wire
 # connect system originally designed for 'glow-wire' heating applications, that
 # has found extended life and use in the reprap and desktop 3DP world
 # Following values are from Molex datasheet  http://www.molex.com/pdm_docs/sd/436500215_sd.pdf
+# the product key for the part is simple:  
+# 43650-XXYY
+# XX = # of circuits 
+# YY = finish and style     
+# YY = {'pth':[9,10,11],'smt right angle':[12,13,14],'smt straight,tabbed':[21,22,23],'smt straight,notabs':[24,25,26]}
+# Molex offers single row headers for these components with 3 finishes:
+# 2.54nm Tin contacts/ 1.27nm Tin plated tails
+# 0.38nm Gold contacts/ 2.54nm Tin plated tails over 1.27nm Nickel
+# 0.76nm Gold contacts/ 1.27nm Tin plated tail over 1.27nm Nickel
+
 import footgen
 
 MMF_basename = "Molex-43650-{0}XX"
