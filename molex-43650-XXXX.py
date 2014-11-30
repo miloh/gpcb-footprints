@@ -6,18 +6,17 @@
 # Micro Fit 3 is a 3mm pitch 5A max crimpping wire-2-board and board-2-board
 # connect system originally designed for 'glow-wire' heating applications, that
 # has found extended life and use in the reprap and desktop 3DP world
-# Following values are from Molex datasheet
-# http://www.molex.com/pdm_docs/sd/436500215_sd.pdf
+# Following values are from Molex datasheet  http://www.molex.com/pdm_docs/sd/436500215_sd.pdf
 import footgen
 
-MMF_basename = "Molex-43650-{0}2X"
+MMF_basename = "Molex-43650-{0}XX"
 MMF_pins = range(2,13)
 # following values are from datasheet
 MMF_dimA = [9.65,12.65,15.65,18.65,21.65,24.65,27.65,30.65,33.65,36.65,39.65] 
 MMF_dimB = [ 3.00,6.00,9.00,12.00,15.00,18.00,21.00,24.00,27.00,30.00,33.00]
 MMF_dimC = [14.20,17.20,20.20,23.20,26.20,29.20,32.20,35.20,38.20,41.20,44.20]
-for i in range(len(MMF_names)):
-    f = footgen.Footgen(MMF_basename.format(MMF_pins[i]))
+for i in range(len(MMF_pins)):
+    f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2)))
     f.pins = MMF_pins[i] 
     f.height = MMF_dimC[i]
     f.generator.clearance = 0.3048
