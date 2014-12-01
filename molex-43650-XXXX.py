@@ -31,7 +31,7 @@ MMF_pins = range(2,13)
 MMF_style = {'pth, horizontal, snap-in plastic peg PCB lock':[0,1,2,37],'smt, horizontal, PCB press-fit metal retention clip':[3,4,5,59],'smt, horizontal, pcb polarizing peg':[9,10,11],'smt, horizontal ,solder tab':[12,13,14],'pth, vertical, pcb polarizing peg':[15,16,17],'pth, vertical, PCB press-fit metal retention clip':[18,19,20],'smt, vertical, PCB press-fit metal retention clips':[21,22,23],'smt, vertical, solder tab':[24,25,26]}
 MMF_finish = {'tin 2.54nm':0, 'gold, 38nm':1, 'gold, 76nm':2}
 # Dimensions will change for the following part groups -- 
-MMF_dimA = [9.65,12.65,15.65,18.65,21.65,24.65,27.65,30.65,33.65,36.65,39.65] 
+MMF_dimA = [9.65,12.65,15.65,18.64,21.64,24.64,27.64,30.63,33.66,36.65,39.65] 
 MMF_dimB = [ 3.00,6.00,9.00,12.00,15.00,18.00,21.00,24.00,27.00,30.00,33.00]
 MMF_dimC = [None,None,4.70,7.70,10.70,13.70,16.70,19.70,22.70,25.70,28.70]
 for i in range(len(MMF_pins)):
@@ -56,6 +56,24 @@ for i in range(len(MMF_pins)):
     if f.height is not None:
       f.add_mount(pin="snap-in" ,x= f.height/2, y= 0, size= 3.00,pad=3.00)
       f.add_mount(pin="snap-in" ,x= -f.height/2, y= 0, size= 3.00,pad=3.00)
+    f.finish()
+for i in range(len(MMF_pins)):
+    f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, horizontal, tabbed'][MMF_finish['tin 2.54nm']]).zfill(2)))
+    f.pins = MMF_pins[i] 
+    f.generator.clearance = 0.3048
+    f.generator.mask_clearance = 0.1524
+    f.pitch = 3.00
+    f.width = 2.15+2.54
+    f.height = MMF_dimC[i]
+    f.padheight = 1.27
+    f.padwidth = 2.54
+    f.box_corners((f.height+2)/2,f.width/2,-(f.height+2)/2,-(f.width+f.padwidth))
+    f.silk_diamond(MMF_dimB[i]/2,f.width+f.padwidth/2,.5,.2) # pin one marking,  
+    #signal pads
+    f.rowofpads([0,-f.width+f.padwidth/2],"left",1,f.pins)
+    # header case gnds at the back
+    f.add_pad("MNT",-f.height/2 + 3.43/2, 0, 3.43, 1.65) 
+    f.add_pad("MNT",f.height/2  - 3.43/2, 0, 3.43, 1.65) 
     f.finish()
 #MMF_dimA = [9.65,12.65,15.65,18.65,21.65,24.65,27.65,30.65,33.65,36.65,39.65] 
 #MMF_dimB = [ 3.00,6.00,9.00,12.00,15.00,18.00,21.00,24.00,27.00,30.00,33.00]
@@ -119,24 +137,6 @@ for i in range(len(MMF_pins)):
 #    f.add_mount(pin="retention clip" ,x= -f.height/2, y= 0, size= 2.41,pad=2.41)
 #    f.finish()
 #
-#for i in range(len(MMF_pins)):
-#    f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, horizontal, tabbed'][MMF_finish['tin 2.54nm']]).zfill(2)))
-#    f.pins = MMF_pins[i] 
-#    f.generator.clearance = 0.3048
-#    f.generator.mask_clearance = 0.1524
-#    f.pitch = 3.00
-#    f.width = 2.15+2.54
-#    f.height = MMF_dimC[i]
-#    f.padheight = 1.27
-#    f.padwidth = 2.54
-#    f.box_corners((f.height+2)/2,f.width/2,-(f.height+2)/2,-(f.width+f.padwidth))
-#    f.silk_diamond(MMF_dimB[i]/2,f.width+f.padwidth/2,.5,.2) # pin one marking,  
-#    #signal pads
-#    f.rowofpads([0,-f.width+f.padwidth/2],"left",1,f.pins)
-#    # header case gnds at the back
-#    f.add_pad("MNT",-f.height/2 + 3.43/2, 0, 3.43, 1.65) 
-#    f.add_pad("MNT",f.height/2  - 3.43/2, 0, 3.43, 1.65) 
-#    f.finish()
 #
 #
 #
