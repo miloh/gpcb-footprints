@@ -180,6 +180,8 @@ for i in range(len(MMF_pins)):
     f.add_mount(pin="CLIP" ,x= -MMF_dimC[i]/2, y= 0, size= 2.41, pad=2.41)
     f.add_mount(pin="CLIP" ,x= +MMF_dimC[i]/2, y= 0, size= 2.41, pad=2.41)
     f.finish()
+#21,22,23 missing 
+#24,25,26 missing
 #for i in range(len(MMF_pins)):
 #    f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, vertical, solder tab'][MMF_finish['tin 2.54nm']]).zfill(2)))
 #    f.pins = MMF_pins[i] 
@@ -220,25 +222,3 @@ for i in range(len(MMF_pins)):
 #    f.add_mount(pin="retention clip" ,x= -f.height/2, y= 0, size= 2.41,pad=2.41)
 #    f.finish()
 #
-#
-#
-#
-#    f.finish()
-##for i in range(len(MMF_pins)):
-##    f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['pth vertical'][MMF_finish['tin 2.54nm']]).zfill(2)))
-##    f.pins = MMF_pins[i] 
-##    f.generator.clearance = 0.3048
-##    f.generator.mask_clearance = 0.1524
-##    f.pitch = 3.00
-##    f.width = 2.15+2.54
-##    f.height = MMF_dimC[i]
-##    f.padheight = 1.27
-##    f.padwidth = 2.54
-##    f.box_corners((f.height+2)/2,f.width/2,-(f.height+2)/2,-(f.width+f.padwidth))
-##    f.silk_diamond(MMF_dimB[i]/2,f.width+f.padwidth/2,.5,.2) # pin one marking,  
-##    #signal pads
-##    f.rowofpads([0,-f.width+f.padwidth/2],"left",1,f.pins)
-##    # header case gnds at the back
-##    f.add_pad("MNT",-f.height/2 + 3.43/2, 0, 3.43, 1.65) 
-##    f.add_pad("MNT",f.height/2  - 3.43/2, 0, 3.43, 1.65) 
-##    f.finish()
