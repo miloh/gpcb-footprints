@@ -27,21 +27,29 @@ for i in range(len(molex_74099_pins)):
     f.generator.mask_clearance = 0.1524
     f.pitch = 2.54
     f.width = 6.60
+    rowlen = molex_74099_dimB[i]
+    inner_width = 5.08
+    notch_width = 1.52
     f.padheight = 1.27
     f.padwidth = 3.18 
-#    f.silk_line( )
-#    f.silk_line( )
-#    f.silk_line( )
-    #f.silk_diamond(MMF_dimB[i]/2,4.6,0.50,0.20) # pin one marking, at entry 
-# this smt part has staggared spacing for the contact pads
-# generate arrays of odds and evens for the contact rows
-    rowlen = f.pitch * (f.pins -1)
+    f.silk_line(f.height/2,inner_width/2,rowlen/2,inner_width/2)
+    f.silk_line(-f.height/2,inner_width/2,-f.height/2+0.5,inner_width/2)
+    f.silk_line(f.height/2,inner_width/2,f.height/2,-inner_width/2)
+    f.silk_line(f.height/2,-inner_width/2,f.height/2-0.5,-inner_width/2 )
+    #f.silk_line(rowlen/2,-inner_width/2,rowlen/2,-inner_width/2-notch_width)
+    f.silk_line(-rowlen/2,-inner_width/2-notch_width,-rowlen/2+0.5,-inner_width/2-notch_width )
+    f.silk_line(-rowlen/2,-inner_width/2,-rowlen/2,-inner_width/2-notch_width)
+    f.silk_line(-f.height/2,-inner_width/2,-rowlen/2,-inner_width/2 )
+    f.silk_line(-f.height/2,-inner_width/2,-f.height/2,inner_width/2)
     x = rowlen * 0.5
     y_offset = 1.02
+# this smt part's contact pads use staggared spacing 
+# generate arrays of odds and evens for the contact rows
     for i in range(1,f.pins+1):
         if  i % 2:
-            f.add_pad(str(i),x,0-y_offset,f.padheight,f.padwidth)
+            f.add_pad(str(i),x,-y_offset-f.padwidth/2,f.padheight,f.padwidth)
         if not i % 2:
-            f.add_pad(str(i),x,0+y_offset,f.padheight,f.padwidth)
+            f.add_pad(str(i),x,+y_offset+f.padwidth/2,f.padheight,f.padwidth)
         x = x - f.pitch
+    f.silk_diamond(rowlen*0.5,-(y_offset*2.5+f.padwidth),0.2,0.10) # pad one indicator
     f.finish()
