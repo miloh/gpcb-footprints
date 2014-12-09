@@ -36,10 +36,12 @@ for i in range(len(molex_74099_pins)):
     f.silk_line(-f.height/2,inner_width/2,-f.height/2+0.5,inner_width/2)
     f.silk_line(f.height/2,inner_width/2,f.height/2,-inner_width/2)
     f.silk_line(f.height/2,-inner_width/2,f.height/2-0.5,-inner_width/2 )
-    #f.silk_line(rowlen/2,-inner_width/2,rowlen/2,-inner_width/2-notch_width)
-    f.silk_line(-rowlen/2,-inner_width/2-notch_width,-rowlen/2+0.5,-inner_width/2-notch_width )
-    f.silk_line(-rowlen/2,-inner_width/2,-rowlen/2,-inner_width/2-notch_width)
-    f.silk_line(-f.height/2,-inner_width/2,-rowlen/2,-inner_width/2 )
+    if not f.pins % 2:
+        f.silk_line(-rowlen/2,-inner_width/2-notch_width,-rowlen/2+0.5,-inner_width/2-notch_width )
+        f.silk_line(-rowlen/2,-inner_width/2,-rowlen/2,-inner_width/2-notch_width)
+        f.silk_line(-f.height/2,-inner_width/2,-rowlen/2,-inner_width/2 )
+    if f.pins % 2:
+        f.silk_line(-f.height/2,-inner_width/2,-f.height/2+0.5,-inner_width/2 )
     f.silk_line(-f.height/2,-inner_width/2,-f.height/2,inner_width/2)
     x = rowlen * 0.5
     y_offset = 1.02
