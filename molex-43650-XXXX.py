@@ -30,7 +30,7 @@ import footgen
 MMF_basename = "Molex-43650-{0}{1}"
 MMF_pins = range(2,13)
 MMF_style = {'pth, horizontal, snap-in plastic peg PCB lock':[0,1,2,37],'pth, horizontal, PCB press-fit metal retention clip':[3,4,5,59],'smt, horizontal, PCB press-fit metal rentention clip':[9,10,11],'smt, horizontal, solder tab':[12,13,14],'pth, vertical, pcb polarizing peg':[15,16,17],'pth, vertical, PCB press-fit metal retention clip':[18,19,20],'smt, vertical, PCB press-fit metal retention clips':[21,22,23],'smt, vertical, solder tab':[24,25,26]}
-MMF_finish = {'tin 2.54nm':0, 'gold, 38nm':1, 'gold, 76nm':2}
+MMF_finish = {'tin 2.54nm':0, 'gold, 0.38um':1, 'gold, 0.76mm':2}
 # Dimensions will change for the following part groups -- 
 MMF_dimA = [9.65,12.65,15.65,18.64,21.64,24.64,27.64,30.63,33.66,36.65,39.65] 
 MMF_dimB = [ 3.00,6.00,9.00,12.00,15.00,18.00,21.00,24.00,27.00,30.00,33.00]
