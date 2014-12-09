@@ -10,7 +10,7 @@ import footgen
 # following values are from datasheet "015912045_sd.pdf
 # all units mm
 
-molex_70634_basename = "molex-70634-02"
+molex_70634_basename = "Molex-70634-02"
 molex_70634_pins = [2,3,4] # more pins in the complete sheet 
 molex_70634_dimA = [2.54,5.08,7.62] 
 molex_70634_dimB = [5.33,8.13,10.67]
