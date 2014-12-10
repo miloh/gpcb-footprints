@@ -25,7 +25,7 @@ for i in range(len(molex_70634_pins)):
     outer_Xedge = molex_70634_dimC[i]
     f.height = molex_70634_dimD[i]
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.1524
+    f.generator.mask_clearance = 0.080
     f.pitch = 2.54
     f.width = 13.59 + 3.18
     f.padheight = 1.65

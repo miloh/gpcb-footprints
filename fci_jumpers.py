@@ -17,7 +17,7 @@ for i in range(len(pos)):
     if pos == 100:
         f = footgen.Footgen(basename.format(str(A0)))
     f.generator.clearance = 0.33
-    f.generator.mask_clearance = 0.250
+    f.generator.mask_clearance = 0.080
     f.pins = pos[i]
     f.pitch = 1.27
     f.padheight = 0.76 # mm

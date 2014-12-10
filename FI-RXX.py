@@ -28,7 +28,7 @@ FI_RE_VF_dimH = [21.85, 26.85, 31.85, 36.85]
 for i in range(len(FI_RE_contacts)):
     f = footgen.Footgen(FI_RE_basename.format(FI_RE_contacts[i],FI_RE_EntryTypes['Top']))
     f.generator.clearance = 0.204
-    f.generator.mask_clearance = 0.102
+    f.generator.mask_clearance = 0.080
     f.pins = FI_RE_contacts[i] 
     f.pitch = 0.5 
     f.height = FI_RE_VF_dimF[i]
@@ -81,7 +81,7 @@ FI_RE_HF_dimH = [22.85, 27.85, 32.85, 37.85]
 for i in range(len(FI_RE_contacts)):
     f = footgen.Footgen(FI_RE_basename.format(FI_RE_contacts[i],FI_RE_EntryTypes['Side']))
     f.generator.clearance = 0.204
-    f.generator.mask_clearance = 0.102
+    f.generator.mask_clearance = 0.080
     f.pins = FI_RE_contacts[i] 
     f.pitch = 0.5 
     f.height = FI_RE_HF_dimG[i]

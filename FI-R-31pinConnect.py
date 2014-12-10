@@ -6,7 +6,7 @@ import footgen
 
 f = footgen.Footgen("FI-R-31")
 f.generator.clearance = 0.3048
-f.generator.mask_clearance = 0.1524
+f.generator.mask_clearance = 0.080
 f.pins = 31
 f.pitch = 0.5 
 # following values are from datasheet

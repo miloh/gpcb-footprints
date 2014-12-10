@@ -18,7 +18,7 @@ for i in range(len(XH_pins)):
     f.pins = XH_pins[i] 
     f.height = XH_dimC[i]
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.1524
+    f.generator.mask_clearance = 0.080
     f.pitch = 2.50
     f.width = 13.0
     f.padheight = 1.30

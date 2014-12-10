@@ -24,7 +24,7 @@ for i in range(len(molex_74099_pins)):
     f.pins = molex_74099_pins[i] 
     f.height = molex_74099_dimA[i]
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.1524
+    f.generator.mask_clearance = 0.080
     f.pitch = 2.54
     f.width = 6.60
     rowlen = molex_74099_dimB[i]

@@ -19,7 +19,7 @@ for i in range(len(PH_pins)):
     f.pins = PH_pins[i] 
     f.height = PH_dimA[i]
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.1524
+    f.generator.mask_clearance = 0.080
     f.pitch = 2.00
     f.width = 7.5  
     f.padheight = 1.0
@@ -57,7 +57,7 @@ for i in range(len(PH_pins)):
     f.pins = PH_pins[i] 
     f.height = PH_dimA[i]
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.1524
+    f.generator.mask_clearance = 0.080
     f.pitch = 2.00
     f.width = 9.0  
     f.padheight = 1.0

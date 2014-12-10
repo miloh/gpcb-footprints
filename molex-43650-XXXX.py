@@ -42,7 +42,7 @@ for i in range(len(MMF_pins)):
     f.generator.drill = 1.02
     f.generator.options_list = ["circle"]
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.153
+    f.generator.mask_clearance = 0.080
     f.pitch = 3.00
     f.width = 4.32
     f.height = MMF_dimA[i]
@@ -76,7 +76,7 @@ for i in range(len(MMF_pins)):
     f.generator.drill = 1.02
     f.generator.options_list = ["circle"]
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.153
+    f.generator.mask_clearance = 0.080
     f.pitch = 3.00
     f.width = 4.32
     f.height = MMF_dimA[i]
@@ -103,7 +103,7 @@ for i in range(len(MMF_pins)):
     f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, horizontal, PCB press-fit metal rentention clip'][MMF_finish['tin 2.54nm']]).zfill(2)))
     f.pins = MMF_pins[i] 
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.153
+    f.generator.mask_clearance = 0.080
     f.pitch = 3.00
     f.width = 6.93 
     f.height = MMF_dimA[i]
@@ -131,7 +131,7 @@ for i in range(len(MMF_pins)):
     f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, horizontal, solder tab'][MMF_finish['tin 2.54nm']]).zfill(2)))
     f.pins = MMF_pins[i] 
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.153
+    f.generator.mask_clearance = 0.080
     f.pitch = 3.00
     f.width = 6.93 
     f.height = MMF_dimA[i]
@@ -163,7 +163,7 @@ for i in range(len(MMF_pins)):
     f.generator.drill = 1.02
     f.generator.options_list = ["circle"]
     f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.153
+    f.generator.mask_clearance = 0.080
     f.pitch = 3.00
     f.width = 4.37 
     f.height = MMF_dimA[i]
@@ -180,14 +180,14 @@ for i in range(len(MMF_pins)):
     f.add_mount(pin="CLIP" ,x= -MMF_dimC[i]/2, y= 0, size= 2.41, pad=2.41)
     f.add_mount(pin="CLIP" ,x= +MMF_dimC[i]/2, y= 0, size= 2.41, pad=2.41)
     f.finish()
-#21,22,23 missing 
-#24,25,26 missing
-#for i in range(len(MMF_pins)):
-#    f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, vertical, solder tab'][MMF_finish['tin 2.54nm']]).zfill(2)))
-#    f.pins = MMF_pins[i] 
-#    f.generator.clearance = 0.3048
-#    f.generator.mask_clearance = 0.1524
-#    f.pitch = 3.00
+#21,22,23 
+# use A,B,C dimension arrays from above
+for i in range(len(MMF_pins)):
+    f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, vertical, PCB press-fit metal retention clips'][MMF_finish['tin 2.54nm']]).zfill(2)))
+    f.pins = MMF_pins[i] 
+    f.generator.clearance = 0.3048
+    f.generator.mask_clearance = 0.080
+    f.pitch = 3.00
 #    f.width = 2.15+2.54
 #    f.height = MMF_dimC[i]
 #    f.padheight = 1.27
@@ -201,6 +201,7 @@ for i in range(len(MMF_pins)):
 #    f.add_pad("MNT",f.height/2  - 3.43/2, 0, 3.43, 1.65) 
 #    f.finish()
 #
+#24,25,26 missing
 #MMF_dimA = [9.65,12.65,15.65,18.65,21.65,24.65,27.65,30.65,33.65,36.65,39.65] 
 #MMF_dimB = [ 3.00,6.00,9.00,12.00,15.00,18.00,21.00,24.00,27.00,30.00,33.00]
 #MMF_dimC = [7.30,10.30,13.30,19.30,22.30,25.30,28.30,31.30,34.30,37.30]
@@ -208,7 +209,7 @@ for i in range(len(MMF_pins)):
 #    f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, vertical, PCB press-fit  metal retention clips'][MMF_finish['tin 2.54nm']]).zfill(2)))
 #    f.pins = MMF_pins[i] 
 #    f.generator.clearance = 0.3048
-#    f.generator.mask_clearance = 0.1524
+#    f.generator.mask_clearance = 0.080
 #    f.pitch = 3.00
 #    f.width = 2.15+2.54
 #    f.height = MMF_dimC[i]

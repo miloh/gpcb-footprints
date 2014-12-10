@@ -6,7 +6,7 @@ import footgen
 
 f = footgen.Footgen("xuntong-ptr9018")
 f.generator.clearance = 0.3048
-f.generator.mask_clearance = 0.1524
+f.generator.mask_clearance = 0.080
 f.pins = 30
 f.pitch = 1.27 # mm
 f.width = 23
