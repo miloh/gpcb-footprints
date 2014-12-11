@@ -89,7 +89,7 @@ for i in range(len(MMF_pins)):
     f.silk_line(-f.height/2, 4.6, f.height/2, 4.6)
     f.silk_line(-f.height/2, 4.6, -f.height/2, 4.6-f.generator.drill)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.generator.drill)
-    f.silk_diamond(MMF_dimB[i]/2,4.6,.5,.2) # pin one marking,  
+    f.silk_diamond(MMF_dimB[i]/2,4.6,.5,.2) # pin one marking  
     #signal pads
     f.rowofpads([0,-f.width],"left",1,f.pins)
     # Press fit metal retention clips 
@@ -117,7 +117,7 @@ for i in range(len(MMF_pins)):
     f.silk_line(-f.height/2, 4.6, -f.height/2, 4.6-f.padwidth/2)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.padwidth/2)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.padheight)
-    f.silk_diamond(MMF_dimB[i]/2,4.6,.5,.2) # pin one marking,  
+    f.silk_diamond(MMF_dimB[i]/2,4.6,0.5,0.2) # pin one marking  
     #signal pads
     f.rowofpads([0,-f.width+f.padwidth/2],"left",1,f.pins) # note geda pcb's footprint locater diamond is centered w/r/t whole footprint 
     # metal retention clips
@@ -181,25 +181,31 @@ for i in range(len(MMF_pins)):
     f.add_mount(pin="CLIP" ,x= +MMF_dimC[i]/2, y= 0, size= 2.41, pad=2.41)
     f.finish()
 #21,22,23 
-# use A,B,C dimension arrays from above
+# use A,B,C dimension arrays from last declaration above
 for i in range(len(MMF_pins)):
     f = footgen.Footgen(MMF_basename.format(str(MMF_pins[i]).zfill(2),str(MMF_style['smt, vertical, PCB press-fit metal retention clips'][MMF_finish['tin 2.54nm']]).zfill(2)))
     f.pins = MMF_pins[i] 
     f.generator.clearance = 0.3048
     f.generator.mask_clearance = 0.080
     f.pitch = 3.00
-#    f.width = 2.15+2.54
-#    f.height = MMF_dimC[i]
-#    f.padheight = 1.27
-#    f.padwidth = 2.54
-#    f.box_corners(MMF_dimA[i]/2,-f.width,-MMF_dimA[i]/2,1.65/2)
-#    f.silk_diamond(MMF_dimB[i]/2,f.width+f.padwidth/2,.5,.2) # pin one marking,  
-#    #signal pads
-#    f.rowofpads([0,-f.width+f.padwidth/2],"left",1,f.pins)
-#    # header case gnds at the back
-#    f.add_pad("MNT",-f.height/2 + 3.43/2, 0, 3.43, 1.65) 
-#    f.add_pad("MNT",f.height/2  - 3.43/2, 0, 3.43, 1.65) 
-#    f.finish()
+    f.width = 4.37
+    f.height = MMF_dimC[i]
+    f.padheight = 1.27
+    f.padwidth = 2.54
+    f.silk_line(-f.height/2,-f.width/2,-f.height/2+2.41/2,-f.width/2)
+    f.silk_line(-f.height/2,-f.width/2+f.padwidth/4,-f.height/2,-f.width/2)
+    f.silk_line(f.height/2,-f.width/2,f.height/2-2.41/2,-f.width/2)
+    f.silk_line(f.height/2,-f.width/2+f.padwidth/4,f.height/2,-f.width/2)
+    f.silk_line(-f.height/2, f.width/2, f.height/2, f.width/2)
+    f.silk_line(-f.height/2, f.width/2, -f.height/2, f.width/2-f.width/5)
+    f.silk_line(f.height/2, f.width/2, f.height/2, f.width/2-f.width/5)
+    f.silk_diamond(MMF_dimB[i]/2,f.width/2 + f.padwidth/2,0.5,0.20) # pin one marking  
+    #signal pads
+    f.rowofpads([0,-2.16-f.padwidth/2],"left",1,f.pins)
+    # header case gnds at the back
+    f.add_mount(pin = "CLIP",x = MMF_dimC[i]/2, y = 0, size = 2.41, pad = 2.41) 
+    f.add_mount(pin = "CLIP",x = -MMF_dimC[i]/2, y = 0, size = 2.41, pad = 2.41) 
+    f.finish()
 #
 #24,25,26 missing
 #MMF_dimA = [9.65,12.65,15.65,18.65,21.65,24.65,27.65,30.65,33.65,36.65,39.65] 
