@@ -1,7 +1,7 @@
 #
 # Element[element_flags, description, pcb-name, value, mark_x, mark_y, text_x, text_y, text_direction, text_scale, text_flags
 
-Element["" "SMT-transistor-SuperSOT-6-package" "" "" 39.00mil 44.00mil -110.00mil 51.00mil 1 100 ""]
+Element["" "SMT-transistor-SC--package" "" "" 39.00mil 44.00mil -110.00mil 51.00mil 1 100 ""]
 (
 
 # Pad[X1, Y1, X2, Y3, width, clearance, soldermask, "pin name", "pin number", flags]
