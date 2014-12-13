@@ -67,9 +67,8 @@ for i in range(len(PH_pins)):
     mntpad_x_offset = 1.6 # do not adjust unless correcting errors
     mntpad_y_offset = 0.2 # do not adjust unless correcting errors
 # silk box must be made in segments since the pads extend past the bounds
-    #f.box_corners( -PH_dimB[i]/2 , f.padwidth/2-7.5, +PH_dimB[i]/2 , f.padwidth/2+1 )
     # silk at "end face of wafer on the mating side"
-    f.silk_line( -PH_dimB[i]/3 , f.padwidth/2-9.0, +PH_dimB[i]/3 , f.padwidth/2-9.0 )
+    f.silk_line( -PH_dimA[i]/2-f.padheight , f.padwidth/2-9.0, +PH_dimA[i]/2+f.padheight, f.padwidth/2-9.0 )
     # silk at the back
     f.silk_line( -PH_dimB[i]/2 , f.padwidth/2+0.25 , +PH_dimB[i]/2 , f.padwidth/2+0.25 )
     f.silk_line( -PH_dimB[i]/2 , f.padwidth/2-4.5, -PH_dimB[i]/2 , f.padwidth/2+0.25)
