@@ -15,8 +15,7 @@ import footgen
 
 FI_RE_basename ="JAE-FI-R-E-{0}S-{1}"
 FI_RE_EntryTypes = {'Top':'VF','Side':"HF"} #HF Horizontal (side entry) and VF Vertical 
-FI_RE_contacts = [21, 31, 41, 51]
-#
+FI_RE_contacts = [21, 31, 41, 51] #
 FI_RE_VF_dimA = [16, 21, 26, 31]
 FI_RE_VF_dimB = [10, 15, 20, 25]
 FI_RE_VF_dimC = [20.35, 25.35, 30.35, 35.35]
@@ -33,6 +32,7 @@ for i in range(len(FI_RE_contacts)):
     f.pitch = 0.5 
     f.height = FI_RE_VF_dimF[i]
     f.width = 5.1 
+    f.silkwidth = 0.254 
     f.padheight = 0.25
     f.padwidth = 1.55 
     f.rowofpads([0,0],"right",1,f.pins) #all contacts
@@ -46,7 +46,8 @@ for i in range(len(FI_RE_contacts)):
 # segments outlining prohibition area at cable entry
     f.silk_line(-FI_RE_VF_dimF[i]/2, f.width, -FI_RE_VF_dimG[i]/2,f.width)
     f.silk_line(FI_RE_VF_dimF[i]/2, f.width, FI_RE_VF_dimG[i]/2,f.width)
-    f.silk_diamond(-(f.pitch*(f.pins-1))/2,f.width+f.padwidth,f.padheight,0.25) # Pin1 diamond mark
+# Pin1 diamond mark with 10mil silkwidth
+    f.silk_diamond(-(f.pitch*(f.pins-1))/2,f.width+f.padwidth,f.padheight,0.254)
 # GND connection pads for the HF and VF version 
     f.add_pad("GND MNT",-float(FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
     f.add_pad("GND MNT",+float(FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
@@ -86,6 +87,7 @@ for i in range(len(FI_RE_contacts)):
     f.pitch = 0.5 
     f.height = FI_RE_HF_dimG[i]
     f.width = 5.1 
+    f.silkwidth = 0.254 
     f.padheight = 0.25
     f.padwidth = 1.55 
     f.rowofpads([0,0],"right",1,f.pins) #all contacts 
@@ -102,7 +104,7 @@ for i in range(len(FI_RE_contacts)):
     f.silk_line(-FI_RE_VF_dimF[i]/2, f.width, -FI_RE_VF_dimF[i]/2, f.width-f.padwidth/4)
     f.silk_line(FI_RE_VF_dimF[i]/2, f.width, FI_RE_VF_dimF[i]/2, f.width-f.padwidth/4)
     f.silk_line(-float(FI_RE_HF_dimB[i])/2+1.3, f.width,float(FI_RE_HF_dimB[i])/2-1.3,f.width)
-    f.silk_diamond(float(-FI_RE_VF_dimB[i])/2,f.width+f.padwidth,f.padheight,0.25) # Pin1 diamond mark
+    f.silk_diamond(float(-FI_RE_VF_dimB[i])/2,f.width+f.padwidth,f.padheight,0.254) # Pin1 diamond mark
 # GND connection pads for the HF and VF versions
     f.add_pad("GND MNT",float(-FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
     f.add_pad("GND MNT",float(+FI_RE_VF_dimB[i])/2, f.width , 1.3, 1.55)
