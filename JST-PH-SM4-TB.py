@@ -41,7 +41,7 @@ for i in range(len(PH_pins)):
 #signal pads
     f.rowofpads([ 0 , 0],"right",1,f.pins)
 # diamond mark at pin1
-    f.silk_diamond(-PH_dimA[i]/2,f.padwidth/2-7.5,0.5,0.15)
+    f.silk_diamond(-PH_dimA[i]/2,f.padwidth/2-7.5,0.5,0.254)
 #side wing gnds
     f.add_pad("MNT", -PH_dimA[i]/2-mntpad_x_offset-mntpadheight/2 , +f.padwidth/2-f.width+mntpad_y_offset+mntpadwidth/2 ,mntpadheight,mntpadwidth) 
     f.add_pad("MNT", +PH_dimA[i]/2+mntpad_x_offset+mntpadheight/2 , +f.padwidth/2-f.width+mntpad_y_offset+mntpadwidth/2 ,mntpadheight,mntpadwidth) 
@@ -75,7 +75,7 @@ for i in range(len(PH_pins)):
     f.silk_line( +PH_dimB[i]/2 , f.padwidth/2-4.5, +PH_dimB[i]/2 , f.padwidth/2+0.25 )
 #signal pads
     f.rowofpads([ 0 , 0],"left",1,f.pins)
-    f.silk_diamond(+PH_dimA[i]/2,f.padwidth/2-9.0,0.5,0.15) # silk diamond mark at pin1
+    f.silk_diamond(+PH_dimA[i]/2,f.padwidth/2-9.0,0.5,0.254) # silk diamond mark at pin1
 #side wing gnds, note the change in placement and dim w/r/t the PH top entry headers
     f.add_pad("MNT", -PH_dimA[i]/2-mntpad_x_offset-mntpadheight/2, +f.padwidth/2-f.width-mntpad_y_offset+mntpadwidth/2 , mntpadheight , mntpadwidth) 
     f.add_pad("MNT", +PH_dimA[i]/2+mntpad_x_offset+mntpadheight/2, +f.padwidth/2-f.width-mntpad_y_offset+mntpadwidth/2 , mntpadheight , mntpadwidth) 

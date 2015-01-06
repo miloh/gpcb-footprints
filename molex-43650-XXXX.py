@@ -56,7 +56,7 @@ for i in range(len(MMF_pins)):
     f.silk_line(-f.height/2, 4.6, f.height/2, 4.6)
     f.silk_line(-f.height/2, 4.6, -f.height/2, 4.6-f.generator.drill)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.generator.drill)
-    f.silk_diamond(MMF_dimB[i]/2,4.6,0.50,0.20) # pin one marking, at entry 
+    f.silk_diamond(MMF_dimB[i]/2,4.6,0.50,0.254) # pin one marking, at entry 
     #signal pins
     f.rowofpads([0,-f.width],"left",1,f.pins)
     # conditional adds correct no. of snap-in plastic peg mounting holes, per datasheet 
@@ -89,7 +89,7 @@ for i in range(len(MMF_pins)):
     f.silk_line(-f.height/2, 4.6, f.height/2, 4.6)
     f.silk_line(-f.height/2, 4.6, -f.height/2, 4.6-f.generator.drill)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.generator.drill)
-    f.silk_diamond(MMF_dimB[i]/2,4.6,.5,.2) # pin one marking  
+    f.silk_diamond(MMF_dimB[i]/2,4.6,.5,0.254) # pin one marking  
     #signal pads
     f.rowofpads([0,-f.width],"left",1,f.pins)
     # Press fit metal retention clips 
@@ -117,7 +117,7 @@ for i in range(len(MMF_pins)):
     f.silk_line(-f.height/2, 4.6, -f.height/2, 4.6-f.padwidth/2)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.padwidth/2)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.padheight)
-    f.silk_diamond(MMF_dimB[i]/2,4.6,0.5,0.2) # pin one marking  
+    f.silk_diamond(MMF_dimB[i]/2,4.6,0.5,0.254) # pin one marking  
     #signal pads
     f.rowofpads([0,-f.width+f.padwidth/2],"left",1,f.pins) # note geda pcb's footprint locater diamond is centered w/r/t whole footprint 
     # metal retention clips
@@ -145,7 +145,7 @@ for i in range(len(MMF_pins)):
     f.silk_line(-f.height/2, 4.6, -f.height/2, 4.6-f.padwidth/2)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.padwidth/2)
     f.silk_line(f.height/2, 4.6, f.height/2, 4.6-f.padheight)
-    f.silk_diamond(MMF_dimB[i]/2,4.6,.5,.2) # pin one marking,  
+    f.silk_diamond(MMF_dimB[i]/2,4.6,.5,0.254) # pin one marking,  
     #signal pads
     f.rowofpads([0,-f.width+f.padwidth/2],"left",1,f.pins) # note geda pcb's footprint locater diamond is centered w/r/t whole footprint 
     # solder tail gnds on the side 
@@ -173,7 +173,7 @@ for i in range(len(MMF_pins)):
     f.silk_line(-f.height/2, 2.47,  f.height/2, 2.47) 
     f.silk_line(-f.height/2, 2.47, -f.height/2, 2.41/2)
     f.silk_line( f.height/2, 2.47,  f.height/2, 2.41/2)
-    f.silk_diamond(MMF_dimB[i]/2,2.47,.5,.2) # pin one marking,  
+    f.silk_diamond(MMF_dimB[i]/2,2.47,.5,0.254) # pin one marking,  
     #signal pads
     f.rowofpads([0,0],"left",1,f.pins)
     # Press fit metal retention clips 
@@ -199,7 +199,7 @@ for i in range(len(MMF_pins)):
     f.silk_line(-f.height/2, f.width/2, f.height/2, f.width/2)
     f.silk_line(-f.height/2, f.width/2, -f.height/2, f.width/2-f.width/5)
     f.silk_line(f.height/2, f.width/2, f.height/2, f.width/2-f.width/5)
-    f.silk_diamond(MMF_dimB[i]/2,f.width/2 + f.padwidth/2,0.5,0.20) # pin one marking  
+    f.silk_diamond(MMF_dimB[i]/2,f.width/2 + f.padwidth/2,0.5,0.254) # pin one marking  
     #signal pads
     f.rowofpads([0,-2.16-f.padwidth/2],"left",1,f.pins)
     # header case gnds at the back
@@ -222,7 +222,7 @@ for i in range(len(MMF_pins)):
 #    f.padheight = 1.27
 #    f.padwidth = 2.54
 #    f.box_corners(MMF_dimA[i]/2,-f.width,-MMF_dimA[i]/2,1.65/2)
-#    f.silk_diamond(MMF_dimB[i]/2,f.width+f.padwidth/2,.5,.2) # pin one marking,  
+#    f.silk_diamond(MMF_dimB[i]/2,f.width+f.padwidth/2,.5,0.254) # pin one marking,  
 #    #signal pads
 #    f.rowofpads([0,-f.width+f.padwidth/2],"left",1,f.pins)
 #    f.add_mount(pin="retention clip" ,x= f.height/2, y= 0, size= 2.41,pad=2.41)

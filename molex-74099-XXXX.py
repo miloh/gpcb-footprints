@@ -53,5 +53,5 @@ for i in range(len(molex_74099_pins)):
         if not i % 2:
             f.add_pad(str(i),x,+y_offset+f.padwidth/2,f.padheight,f.padwidth)
         x = x - f.pitch
-    f.silk_diamond(rowlen*0.5,-(y_offset*2.5+f.padwidth),0.2,0.10) # pad one indicator
+    f.silk_diamond(rowlen*0.5,-(y_offset*2.5+f.padwidth),0.2,0.254) # pad one indicator
     f.finish()
