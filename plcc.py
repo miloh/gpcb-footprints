@@ -14,12 +14,13 @@ f.height = 3.4
 f.width = 2.4
 f.silkwidth = 0.254 
 f.padheight =0.9 
-f.padwidth = 1.6 
+f.padwidth = 1.5 
 f.pinswide= 3.4 
-#   silk component outlines
+## rowofpads(self, pos, whichway, startnum, numpads)
 f.rowofpads([-f.height/2 - f.padwidth/2, 0],"down",1,2)
-f.rowofpads([f.height/2 + f.padwidth/2 , 0],"up",3,4)
+f.rowofpads([f.height/2 + f.padwidth/2 , 0],"up",3,2)
+## silk component outlines
 # Pin1 diamond mark with 10mil silkwidth
 #f.silk_diamond(-(f.pitch*(f.pins-1))/2,f.width+f.padwidth,f.padheight,0.254)
-f.silk_crop(3.3, pin1="diamond",rotate='-90')
+#f.silk_crop(3.3, pin1="diamond",rotate='-90')
 f.finish()
