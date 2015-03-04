@@ -39,6 +39,7 @@ Thumbs.db
 # Editing files #
 ################
 *.swp
+*.backup
 
 # schematics for geda/gaf #
 *.sch~
