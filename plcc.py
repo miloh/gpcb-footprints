@@ -2,6 +2,13 @@
 # R. Miloh Alexander
 # Use: unrestricted with attribution
 
+# This set of footgen stanzas creates footprints for WS2812 and WS2812B,
+# as well as a couple genericized 'plcc4' and 'plcc6' 4 and 6 pad 5mmx5mm parts 
+#
+# this small family of parts is probably incorrectly termed as 'plcc'
+# since 'plastic leaded chip carrier' smt parts are typically leaded on four
+# sides, but for some reason the plcc4/plcc6 terminology stuck for use with
+# the popular worldsemi WS2812 and WS2812B rgb led parts.
 
 # units in mm
 import footgen
