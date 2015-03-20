@@ -7,7 +7,7 @@
 
 # Element [ element-flags desc.  pcb-name value .... ]
 
-Element[ "" "JST SMF Disconnectable Crimp style connector for 1.0mm dia pin" "RT-01T-1.0B"  "" 2mm  2mm 1mm -1mm 0 100 ""]
+Element[ "" "JST SMF Disconnectable Crimp style connector for 1.3mm dia pin" "RT-01T-1.3B"  "" 2mm  2mm 1mm -1mm 0 100 ""]
 (
 # Pin        [ rX  rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
 	Pin [0.00mm  0.00mm 1.60mm 0.152mm 1.725mm 1.3mm "1" "1" ""]
