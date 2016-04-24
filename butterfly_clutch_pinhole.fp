@@ -2,12 +2,12 @@
 ## ------------------------------------------------------------------
 # Element [SFlags "Desc" "Name" "Value" MX MY TX TY Tdir Tscale TSFlags]
 # ------------------------------------------------------------------
-Element["" "LINXTECHNOLOGIES CR1220 BATTERY HOLDER" "" "BAT-HLD-001" 0mm 0mm -3mm -7mm 0 100 ""]
+Element["" "BUTTERFLY CLUTCH PIN" "" "" 0mm 0mm -3mm -7mm 0 100 ""]
 (
 # ------------------------------------------------------------------
     #Pin[x y thickness clearance mask drillholedia name number flags] 
 #-------------------------------------------------------------------
-    Pin [  0mm 0.0mm  2.1mm 8mil 2.10mm 1.40mm "POS" "1" "pin"]
+    Pin [  0mm 0.0mm  2.1mm 8mil 2.10mm 1.40mm "NC" "1" "pin"]
 
 # ------------------------------------------------------------------
 # ElementArc [rX rY Width Height StartAngle DeltaAngle Thickness]
