@@ -13,6 +13,7 @@
 #
 # SFlags is where the pin part gets various values:
 # "", "pin, via, hole, showname, onsolder, square, octogon, edge2"
+# "", "nopaste, onsolder, square (round=default),warn,edge2"
 #
 
 These elements are used in layouts, but can be converted to the
