@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------
 # Element [SFlags "Desc" "Name" "Value" MX MY TX TY Tdir Tscale TSFlags]
 # ------------------------------------------------------------------
-Element["" "muRATA AUDIO ALERTER ENCLOSED PIEZO" "KM13EPYH4000" "" 0mm 0mm -3mm -7mm 0 100 ""]
+Element["" "muRATA 13mm AUDIO ALERTER ENCLOSED PIEZO" "PKM13" "" 0mm 0mm -3mm -7mm 0 100 ""]
 (
 # ------------------------------------------------------------------
     #Pin[x y thickness clearance mask drillholedia name number flags] 
