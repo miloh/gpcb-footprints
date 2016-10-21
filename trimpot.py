@@ -6,7 +6,7 @@ import footgen
 
 # Implement footprint for BI technologies/TT Electronics 84PRxx 1/4" multiturn smd cermet trim pot
 
-trimpot_basename = "84-{0}"
+trimpot_basename = "84{0}"
 trimpot_types = {'Top':'W','Side':'X','SideShort':'P'}
 f = footgen.Footgen(trimpot_basename.format(trimpot_types['Top']))
 #f = footgen.Footgen(trimpot_basename.format(trimpot_types['Side']))
@@ -31,7 +31,7 @@ f.add_pad ( "2", 0     , -(f.height-f.padheight)/2,  f.padwidth, f.padheight)
 f.add_pad ( "3", 2.54  , (f.height-f.padheight)/2, f.padwidth, f.padheight)
 f.finish()
 
-trimpot_basename = "84-{0}"
+trimpot_basename = "84{0}"
 trimpot_types = {'Top':'W','Side':'X','SideShort':'P'}
 #f = footgen.Footgen(trimpot_basename.format(trimpot_types['Top']))
 f = footgen.Footgen(trimpot_basename.format(trimpot_types['Side']))
