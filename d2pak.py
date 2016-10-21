@@ -5,6 +5,11 @@
 
 import footgen
 
+# package index:
+# d2pak (TO-263)
+# dpak (TO-252)
+# i2pak (TO-262)
+# ipak (TO-251)
 #
 # Implements footprints for IRF5305S from infineon
 # datasheet source irf5305spbf.pdf
