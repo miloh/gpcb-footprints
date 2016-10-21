@@ -21,6 +21,7 @@ f.add_pad( str(2),  (f.width-f.padwidth)/2, -(f.height-f.padheight)/2, f.padwidt
 f.add_pad( str(3), -(f.width-f.padwidth)/2, -(f.height-f.padheight)/2, f.padwidth, f.padheight) 
 f.add_pad( str(4), -(f.width-f.padwidth)/2,  (f.height-f.padheight)/2, f.padwidth, f.padheight) 
 
+f.finish()
 # Implement footprint for  SKQG from ALPS
 
 f = footgen.Footgen("SKQG-SMT")
@@ -36,4 +37,3 @@ f.add_pad( str(3), -(f.width-f.padwidth)/2, -(f.height-f.padheight)/2, f.padwidt
 f.add_pad( str(4), -(f.width-f.padwidth)/2,  (f.height-f.padheight)/2, f.padwidth, f.padheight) 
 
 f.finish()
-
