@@ -1,5 +1,8 @@
-Element["" "" "" "" 85945 124213 0 0 0 100 ""]
+Element["" "htssop(14) with masked, pad, exposed pad and heat sinking via array" "" "" 0mm 0mm 2.75mm 0mm 0 100 ""]
+# Element [ SFlags "Desc" "pcb-name" "value" MX MY TX TY TDir Scale TSFlags](
+# from TPS1H100-Q1 datasheet.  part is good for htssop(14) reference with e-pad work removed
 (
+# Pad        [ x1 y1 x2 y2 thickness clear mask "name" "pad_number" sflags]
 	Pad[-3.45mm -1.95mm -2.15mm -1.95mm  0.30mm   1mm   0.440mm "" "1" "square"]
 	Pad[-3.45mm  -1.3mm -2.15mm  -1.3mm  0.30mm   1mm   0.440mm "" "2" "square"]
 	Pad[-3.45mm -0.65mm -2.15mm -0.65mm  0.30mm   1mm   0.440mm "" "3" "square"]
@@ -24,4 +27,12 @@ Element["" "" "" "" 85945 124213 0 0 0 100 ""]
 	Pin[ 0.75mm     0mm  0.2mm 0mm 0mm 0.33mm "hr" "0" "via"] 
 	Pin[-0.75mm   1.5mm  0.2mm 0mm 0mm 0.33mm "hr" "0" "via"] 
 	Pin[ 0.75mm   1.5mm  0.2mm 0mm 0mm 0.33mm "hr" "0" "via"] 
+# ElementLine[ rX1 rY1 rX2 rY2  silk thicknessmil]
+# ElementArc [ rX rY Width Height StartAngle DeltaAngle Thickness]
+	ElementLine[-4.0mm -2.55mm -4.0mm  2.55mm 0.2mm]
+	ElementLine[ 4.0mm -2.55mm  4.0mm  2.55mm 0.2mm]
+	ElementLine[-4.0mm  2.55mm  4.0mm  2.55mm  0.2mm]
+	ElementLine[-4.0mm -2.55mm -0.5mm -2.55mm  0.2mm]
+	ElementLine[ 0.5mm  -2.55mm  4.0mm -2.55mm  0.2mm]
+	ElementArc[   0mm  -2.55mm   0.5mm  0.5mm 0 180 0.2mm]
 	)
