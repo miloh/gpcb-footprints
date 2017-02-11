@@ -46,6 +46,10 @@ Thumbs.db
 *.sym~
 *.fp~
 
+# pcb and pcb-rnd generated files
+*.pcb-
+*.fp-
+
 #Output files# 
 ##############
 *.pdf
