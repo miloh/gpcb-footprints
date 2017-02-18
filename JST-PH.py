@@ -100,26 +100,25 @@ for i in range(len(PH_pins)):
     f.pitch = 2.00
     f.drill = 0.55
     f.diameter = f.drill * 2.0
-    f.width = 0  
+    f.width = 0   # this needs to be zero to get a single line of pins
+    xsize = 4.5
+    silk_xmin = -1.7
+    silk_xmax = silk_xmin + xsize
     f.draw_silk = False
-    mntpadwidth = 3.0  # increase this value for improved mechanical strength
-    mntpadheight = 1.6 # change this as well 
-    mntpad_x_offset = 1.6
-    mntpad_y_offset = 1.0
 # silk box must be made in segments since the pads extend past the bounds
-    #f.box_corners( -PH_dimB[i]/2 , f.padwidth/2-7.5, +PH_dimB[i]/2 , f.padwidth/2+1 )
-# silk at back of the connector 
-    f.silk_line( -3.0,-PH_dimB[i]/2 , -3.0,  +PH_dimB[i]/2  )
-    f.silk_line( -3.0,-PH_dimB[i]/2 , -2.0,  -PH_dimB[i]/2  )
-    f.silk_line( -3.0,+PH_dimB[i]/2 , -2.0,  +PH_dimB[i]/2  )
-# silk at the open end of the mating side 
-    f.silk_line( 1.5,-PH_dimB[i]/2 , 1.5,  +PH_dimB[i]/2  )
-    f.silk_line( 0.5, -PH_dimB[i]/2 ,1.5,  -PH_dimB[i]/2 )
-    f.silk_line( 0.5, +PH_dimB[i]/2 ,1.5,  +PH_dimB[i]/2  )
+    f.box_corners( silk_xmin ,  -PH_dimB[i]/2 , silk_xmax , +PH_dimB[i]/2  )
+## silk at back of the connector 
+#    f.silk_line( -3.0,-PH_dimB[i]/2 , -3.0,  +PH_dimB[i]/2  )
+#    f.silk_line( -3.0,-PH_dimB[i]/2 , -2.0,  -PH_dimB[i]/2  )
+#    f.silk_line( -3.0,+PH_dimB[i]/2 , -2.0,  +PH_dimB[i]/2  )
+## silk at the open end of the mating side 
+#    f.silk_line( 1.5,-PH_dimB[i]/2 , 1.5,  +PH_dimB[i]/2  )
+#    f.silk_line( 0.5, -PH_dimB[i]/2 ,1.5,  -PH_dimB[i]/2 )
+#    f.silk_line( 0.5, +PH_dimB[i]/2 ,1.5,  +PH_dimB[i]/2  )
 #signal pins
     f.dip(pitch=f.pitch,pins=f.pins,drill=f.drill,diameter=f.diameter,width=f.width,draw_silk=f.draw_silk)
 # diamond mark at pin1
-    f.silk_diamond(-3.0,-PH_dimA[i]/2,0.5,0.254)
+    f.silk_diamond(silk_xmin, -PH_dimA[i]/2, 0.5, 0.254)
     f.finish()
 
 ## JST PTH PH Side Entry Headers
@@ -136,23 +135,22 @@ for i in range(len(PH_pins)):
     f.drill = 0.55
     f.diameter = f.drill * 2.0
     f.width = 0  
+    xsize = 7.6
+    silk_xmin = -1.6
+    silk_xmax = silk_xmin + xsize
     f.draw_silk = False
-    mntpadwidth = 3.0  # increase this value for improved mechanical strength
-    mntpadheight = 1.6 # change this as well 
-    mntpad_x_offset = 1.6
-    mntpad_y_offset = 1.0
 # silk box must be made in segments since the pads extend past the bounds
-    #f.box_corners( -PH_dimB[i]/2 , f.padwidth/2-7.5, +PH_dimB[i]/2 , f.padwidth/2+1 )
-    # silk at back of the connector 
-    f.silk_line( -5.5,-PH_dimB[i]/2 , -5.5,  +PH_dimB[i]/2  )
-    f.silk_line( -5.5,-PH_dimB[i]/2 , -2.0,  -PH_dimB[i]/2  )
-    f.silk_line( -5.5,+PH_dimB[i]/2 , -2.0,  +PH_dimB[i]/2  )
-# silk at the open end of the mating side 
-    f.silk_line( 1.0,-PH_dimB[i]/2 , 1.0,  +PH_dimB[i]/2  )
-    f.silk_line( 0, -PH_dimB[i]/2 ,1.5,  -PH_dimB[i]/2 )
-    f.silk_line( 0, +PH_dimB[i]/2 ,1.5,  +PH_dimB[i]/2  )
+    f.box_corners( silk_xmin , -PH_dimB[i]/2 ,silk_xmax , +PH_dimB[i]/2   )
+#    # silk at back of the connector 
+#    f.silk_line( -5.5,-PH_dimB[i]/2 , -5.5,  +PH_dimB[i]/2  )
+#    f.silk_line( -5.5,-PH_dimB[i]/2 , -2.0,  -PH_dimB[i]/2  )
+#    f.silk_line( -5.5,+PH_dimB[i]/2 , -2.0,  +PH_dimB[i]/2  )
+## silk at the open end of the mating side 
+#    f.silk_line( 1.0,-PH_dimB[i]/2 , 1.0,  +PH_dimB[i]/2  )
+#    f.silk_line( 0, -PH_dimB[i]/2 ,1.5,  -PH_dimB[i]/2 )
+#    f.silk_line( 0, +PH_dimB[i]/2 ,1.5,  +PH_dimB[i]/2  )
 # signal pins
     f.dip(pitch=f.pitch,pins=f.pins,drill=f.drill,diameter=f.diameter,width=f.width,draw_silk=f.draw_silk)
 # diamond mark at pin1
-    f.silk_diamond(-5.5,-PH_dimA[i]/2,0.5,0.254)
+    f.silk_diamond(silk_xmin , -PH_dimA[i]/2,0.5,0.254)
     f.finish()
