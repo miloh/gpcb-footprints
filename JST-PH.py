@@ -116,9 +116,9 @@ for i in range(len(PH_pins)):
 #    f.silk_line( 0.5, -PH_dimB[i]/2 ,1.5,  -PH_dimB[i]/2 )
 #    f.silk_line( 0.5, +PH_dimB[i]/2 ,1.5,  +PH_dimB[i]/2  )
 #signal pins
-    f.dip(pitch=f.pitch,pins=f.pins,drill=f.drill,diameter=f.diameter,width=f.width,draw_silk=f.draw_silk)
+    f.dip(pitch=-f.pitch,pins=f.pins,drill=f.drill,diameter=f.diameter,width=f.width,draw_silk=f.draw_silk)
 # diamond mark at pin1
-    f.silk_diamond(silk_xmin, -PH_dimA[i]/2, 0.5, 0.254)
+    f.silk_diamond(silk_xmin, PH_dimA[i]/2, 0.5, 0.254)
     f.finish()
 
 ## JST PTH PH Side Entry Headers
@@ -150,7 +150,7 @@ for i in range(len(PH_pins)):
 #    f.silk_line( 0, -PH_dimB[i]/2 ,1.5,  -PH_dimB[i]/2 )
 #    f.silk_line( 0, +PH_dimB[i]/2 ,1.5,  +PH_dimB[i]/2  )
 # signal pins
-    f.dip(pitch=f.pitch,pins=f.pins,drill=f.drill,diameter=f.diameter,width=f.width,draw_silk=f.draw_silk)
+    f.dip(pitch=-f.pitch,pins=f.pins,drill=f.drill,diameter=f.diameter,width=f.width,draw_silk=f.draw_silk)
 # diamond mark at pin1
-    f.silk_diamond(silk_xmin , -PH_dimA[i]/2,0.5,0.254)
+    f.silk_diamond(silk_xmin , PH_dimA[i]/2,0.5,0.254)
     f.finish()
