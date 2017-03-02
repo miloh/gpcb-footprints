@@ -10,12 +10,12 @@ Element["" "ssop(n=10,row_spacing=4.075mm,pad_spacing=0.50mm,ext_bloat=0.65mm,in
 	Pad[ 5462 1968 10580 1968 1181 1000 1732 "" "7" "square"]
 	Pad[ -10580 3937 -5462 3937 1181 1000 1732 "" "5" "square"]
 	Pad[ 5462 3937 10580 3937 1181 1000 1732 "" "6" "square"]
-	ElementLine[-12380 -6137 -12380 6137 787]
-	ElementLine[12380 6137 -12380 6137 787]
-	ElementLine[12380 6137 12380 -6137 787]
-	ElementLine[-12380 -6137 -2500 -6137 787]
-	ElementLine[2500 -6137 12380 -6137 787]
-	ElementArc[0 -6137 2500 2500 0 180 787]
+	ElementLine[-12380 -6137 -12380 6137 500]
+	ElementLine[12380 6137 -12380 6137 500]
+	ElementLine[12380 6137 12380 -6137 500]
+	ElementLine[-12380 -6137 -2500 -6137 500]
+	ElementLine[2500 -6137 12380 -6137 500]
+	ElementArc[0 -6137 2500 2500 0 180 500]
 #dimension -8021 -3937 -8021 -1968 -6327.55;0 pad_spacing 
 #dimension -8021 -3937 8021 -3937 3543.3 row_spacing 
 #dimension -10580 -3937 -8021 -3937 2362.2 ext_bloat 
