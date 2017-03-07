@@ -1,4 +1,4 @@
-Element ["" "SMT diode 1 is K, reflow per NXP" "D1" "SOD106A" 0 0 0 -2.9mm 0 100 ""]
+Element ["" "SMT diode 1 is K, reflow per NXP" "D1" "SOD106" 0 0 0 -2.9mm 0 100 ""]
 (
     Pad[ 1.95mm -0.55mm
      4.05mm -0.55mm
