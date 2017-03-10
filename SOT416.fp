@@ -1,4 +1,4 @@
-Element["" "sot416" "U1" "" 0 0 0 -10000 0 100 ""]
+Element["" "SOT416" "U1" "" 0 0 0 -10000 0 100 ""]
 (
     Pad[ -0.70mm   0mm  -0.60mm     0mm  0.5mm 0.15mm 0.55mm  "" "3" "square"]
     Pad[  0.60mm -0.5mm  0.70mm  -0.5mm  0.5mm 0.15mm 0.55mm  "" "2" "square"]
