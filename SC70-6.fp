@@ -1,20 +1,20 @@
 Element["" "SMT transistor, 6 pins" "" "SC70-6" 2257 10257 8600 -9400 3 100 ""]
 (
-	Pad[0 -1000 0 1000
-	  1500 0.10mm 1700 "1" "1" "square,edge2"]
-	Pad[2600 -1000 2600
-	  1000 1500 0.10mm 1700 "2" "2" "square,edge2"]
-	Pad[5100 -1000 5100 1000
-	  1500 0.10mm 1700 "3" "3" "square,edge2"]
-	Pad[5100 -8000 5100 -6000
-	  1500 0.10mm 1700 "4" "4" "square"]
-	Pad[2600 -8000 2600 -6000
-	  1500 0.10mm 1700 "5" "5" "square"]
-	Pad[0 -8000 0 -6000
-	  1500 0.10mm 1700 "6" "6" "square"]
-	ElementLine [-1400 -9400 -1400 2500 500]
-	ElementLine [-1400 2500 6600 2500 500]
-	ElementLine [6600 2500 6600 -9400 500]
-	ElementLine [6600 -9400 -1400 -9400 500]
+	Pad[ -0.65mm 1.35mm -0.65mm 0.85mm 
+	  0.40mm 0.10mm 0.45mm "1" "1" "square,edge2"]
+	Pad[  0.00mm 1.35mm  0.00mm 0.85mm 
+	  0.40mm 0.10mm 0.45mm "2" "2" "square,edge2"]
+	Pad[  0.65mm 1.35mm  0.65mm 0.85mm 
+	  0.40mm 0.10mm 0.45mm "3" "3" "square,edge2"]
+	Pad[  0.65mm -1.35mm  0.65mm -0.85mm 
+	  0.40mm 0.10mm 0.45mm "4" "4" "square,edge2"]
+	Pad[   0.0mm -1.35mm   0.0mm -0.85mm 
+	  0.40mm 0.10mm 0.45mm "5" "5" "square,edge2"]
+	Pad[ -0.65mm -1.35mm -0.65mm -0.85mm 
+	  0.40mm 0.10mm 0.45mm "6" "6" "square,edge2"]
+	ElementLine [-0.95mm -1.65mm  0.95mm -1.65mm 0.05mm]
+	ElementLine [-0.95mm -1.65mm -0.95mm  1.65mm 0.05mm]
+	ElementLine [-0.95mm  1.65mm  0.95mm  1.65mm 0.05mm]
+	ElementLine [ 0.95mm -1.65mm  0.95mm  1.65mm 0.05mm]
 
 	)
