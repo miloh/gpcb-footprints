@@ -1,49 +1,20 @@
-# 78 for SOT23
-# 82 for SOT23
-# 41 for SOT23
-# 34 for SOT23, 24 for SOT25
-Element(0x00 "SMT transistor, 6 pins" "" "SC70_6" 100 0 3 100 0x00)
+Element["" "SMT transistor, 6 pins" "" "SC70-6" 2257 10257 8600 -9400 3 100 ""]
 (
-	ElementLine(0 0 0 119 5)
-	ElementLine(0 119 80 119 5)
-	ElementLine(80 119 80 0 5)
-	ElementLine(80 0 0 0 5)
+	Pad[0 -1000 0 1000
+	  1500 0.10mm 1700 "1" "1" "square,edge2"]
+	Pad[2600 -1000 2600
+	  1000 1500 0.10mm 1700 "2" "2" "square,edge2"]
+	Pad[5100 -1000 5100 1000
+	  1500 0.10mm 1700 "3" "3" "square,edge2"]
+	Pad[5100 -8000 5100 -6000
+	  1500 0.10mm 1700 "4" "4" "square"]
+	Pad[2600 -8000 2600 -6000
+	  1500 0.10mm 1700 "5" "5" "square"]
+	Pad[0 -8000 0 -6000
+	  1500 0.10mm 1700 "6" "6" "square"]
+	ElementLine [-1400 -9400 -1400 2500 500]
+	ElementLine [-1400 2500 6600 2500 500]
+	ElementLine [6600 2500 6600 -9400 500]
+	ElementLine [6600 -9400 -1400 -9400 500]
 
-	# 1st side, 1st pin
-	Pad(14 84
-	       14 104
-	   15 "1" "1" 0x100)
-	 
-	
-
-	# 1st side, 2nd pin
-	Pad(40 84
-	       40 104
-	   15 "2" "2" 0x100)
-	   
-	 
-	# 1st side, 3rd pin
-	Pad(65 84
-	    65 104
-	   15 "3" "3" 0x100)
-	
-	# 2nd side, 3rd pin
-	Pad(65 14
-	       65 34
-	   15 "4" "4" 0x100)
-	   
-	 
-	# 2nd side, 2nd pin
-	Pad(40 14
-	       40 34
-			   15 "5" "5" 0x100)
-	   
-	 
-	# 2nd side, 1st pin
-	Pad(14 14
-	       14 34
-			   15 "6" "6" 0x100)
-	 
-	Mark(14 94)
-)
-
+	)
