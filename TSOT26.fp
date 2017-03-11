@@ -1,4 +1,4 @@
-Element["" "Diodes Inc. Dual complementary Enh mode MOSFET in a TSOT26" "U1" ""
+Element["" "Diodes Inc. Dual complementary Enh mode MOSFET in a TSOT26" "" ""
 0 0 0 -13000 0 100 ""]
 (
     Pad[  -0.95mm  1.2495mm  -0.95mm  0.9495mm 
