@@ -1,5 +1,6 @@
 Element["" "SMT transistor, 6 pins" "" "SC70-6" 2257 10257 8600 -9400 3 100 ""]
 (
+	ElementLine [-1.15mm 1.40mm -1.15mm 1.40mm 0.3mm]
 	Pad[ -0.65mm 1.35mm -0.65mm 0.85mm 
 	  0.40mm 0.18mm 0.50mm "1" "1" "square"]
 	Pad[  0.00mm 1.35mm  0.00mm 0.85mm 
