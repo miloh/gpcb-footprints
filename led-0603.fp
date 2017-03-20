@@ -1,13 +1,3 @@
-##from:pcb
-##for:resistor
-##for:capacitor
-##for:led
-
-	# grab the input values and convert to 1/100 mil
-	# how much to grow the pads by for soldermask [1/100 mil]
-	# clearance from planes [1/100 mil]
-	# silk screen width  [1/100 mil]
-	# courtyard silk screen width  [1/100 mil]
 # element_flags, description, pcb-name, value, mark_x, mark_y,
 # text_x, text_y, text_direction, text_scale, text_flags
 Element["" "Standard SMT resistor, capacitor etc" "" "0603" 0 0 -3150 -3150 0 100 ""]
@@ -33,13 +23,4 @@ Element["" "Standard SMT resistor, capacitor etc" "" "0603" 0 0 -3150 -3150 0 10
 	# this is a +  sign
 	ElementLine [25.00mil -35.00mil 45.00mil -35.00mil 6.00mil]
 	ElementLine [-35.00mil -45.00mil -35.00mil -25.00mil 6.00mil]
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
 )
