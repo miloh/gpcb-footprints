@@ -1,0 +1,36 @@
+# The following elements can be used to create a gEDA pcb layout footprint
+
+# Element [ SFlags "Desc" "pcb-name" "value" MX MY TX TY TDir Scale TSFlags](
+# Pad        [ x1 y1 x2 y2 thickness clear mask "name" "pad_number" sflags]
+# Pin        [ rX  rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
+# ElementLine[ rX1 rY1 rX2 rY2  silk thicknessmil]
+# ElementArc [ rX rY Width Height StartAngle DeltaAngle Thickness]
+)
+
+# notes:
+#   "SFlags" == symbolic flags.  Note sflags is the leading attribute,
+# however in following pad and pin elements it is the trailing attribute.
+#
+# SFlags is where the pin part gets various values:
+# "", "pin, via, hole, showname, onsolder, square, octagon, edge2"
+# "", "nopaste, onsolder, square (round=default),warn,edge2"
+#
+
+These elements are used in layouts, but can be converted to the
+ElementLine element above in editor or gui
+# Line [ x1 y1 x2 y2 thickness clear "sfflags"]
+# Via  [ X1 y1 thickness  clearance  mask drill  "name" "sfflags?"]
+# Arc[43.7965mm 9.9086mm 98.00mil 98.00mil 5.00mil 12.00mil 180 90 "clearline"]
+
+When describing a pad the points do not describe boundaries, but a
+centroid/centerline with endpoint vectors (x1,y1) and (x2,y2). The thickness
+positional operator and the distance between the vectors gives info for total
+area of the pad.
+# Pad        [ x1 y1 x2 y2 thickness clear mask "name" "pad_number" sflags]
+# relationship between the endpoints v1,v2, and the thickness
+#    sqrt((v2-v1)^2) + thickness   =  X dimension
+#     thickness = Y dimension
+# specific case is no change in X between two vectors
+#  distance between y1 and y2 + thickness = Y dimension
+#  thickness = X dimension
+#
