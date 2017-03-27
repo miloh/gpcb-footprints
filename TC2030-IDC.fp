@@ -7,7 +7,7 @@
 # unit base is mils
 
 # Element [ element-flags desc.  pcb-name value .... ]
-Element[ "" "Tag Connect 6 pin needle programming adpater" "TC2030-IDC"  "" 200mil  200mil 100mil 150mil 1 100 ""]
+Element[ "" "Tag Connect 6 pin needle programming adpater" "TC2030-IDC"  "" 2000mil  200mil 120mil 150mil 1 60""]
 (
 	# Pin [rX rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
 	Pin [-100.00mil  -100.00mil 93.50mil 10.00mil 98.50mil 93.50mil "" "" ""]
