@@ -1,5 +1,8 @@
+#Author: R. Miloh Alexander
+#License: public domain
+#Use: unrestricted 
 # 1206 SMD modified for kelvin connection 4 terminal sym
-## Element [ SFlags "Desc" "pcb-name" "value" MX MY TX TY TDir Scale TSFlags](
+# Element [ SFlags "Desc" "pcb-name" "value" MX MY TX TY TDir Scale TSFlags](
 Element["" "SMT resistor with 4 terminal for kelvin connections" "" "1206-kc" 0 0 -3150 -3150 0 100 ""]
 (
 # Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
