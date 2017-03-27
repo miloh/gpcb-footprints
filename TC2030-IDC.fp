@@ -1,6 +1,6 @@
 #Author: R. Miloh Alexander
-#License: 
-#Use: unrestricted with attribution
+#License: public domain
+#Use: unrestricted 
 
 # 6 pin needle adapter for swd (serial wire debug) programming of arm targets
 # this is a footprint for tag-connect needle programmers, which are also used in segger products
