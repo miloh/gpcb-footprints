@@ -12,11 +12,11 @@ Element["" "Bourns Schottky barrier rectifier chip diode " "" "CD1607-B140LF" 48
 # cathode diode mark
 	ElementLine[0.70mm -0.82mm 0.70mm 0.82mm 0.25mm]
 #lines along body
-	ElementLine[-2.10mm -0.90mm 2.10mm -0.90mm 0.10mm]
-	ElementLine[-2.10mm 0.90mm 2.10mm 0.90mm 0.10mm]
+	ElementLine[-2.10mm -0.90mm 2.10mm -0.90mm 0.153mm]
+	ElementLine[-2.10mm 0.90mm 2.10mm 0.90mm 0.153mm]
 #bitty encaps showing body
-	ElementLine[-2.10mm -0.90mm -2.10mm -0.85mm 0.10mm]
-	ElementLine[-2.10mm 0.90mm -2.10mm 0.85mm 0.10mm]
-	ElementLine[2.10mm 0.90mm 2.10mm 0.85mm 0.10mm]
-	ElementLine[2.10mm -0.90mm 2.10mm -0.85mm 0.10mm]
+	ElementLine[-2.10mm -0.90mm -2.10mm -0.85mm 0.153mm]
+	ElementLine[-2.10mm 0.90mm -2.10mm 0.85mm 0.153mm]
+	ElementLine[2.10mm 0.90mm 2.10mm 0.85mm 0.153mm]
+	ElementLine[2.10mm -0.90mm 2.10mm -0.85mm 0.153mm]
 )
