@@ -26,5 +26,4 @@ Element["" "Bourns Schottky barrier rectifier chip diode " "" "CD1607-B140LF" 48
 	ElementLine [-25.00mil 55.00mil -5.00mil 55.00mil 6.00mil]
 	ElementLine [10.00mil 55.00mil 25.00mil 55.00mil 6.00mil]
 	ElementLine [10.00mil 70.00mil 10.00mil 45.00mil 6.00mil]
-	ElementLine [15.00mil 20.00mil 15.00mil 20.00mil 0.08mil]
 )
