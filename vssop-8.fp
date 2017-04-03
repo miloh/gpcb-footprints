@@ -8,16 +8,10 @@ Element["" "ssop(n=8,row_spacing=3.40mm,pad_spacing=0.65mm,ext_bloat=0.65mm,int_
 	Pad[ 4133 1280 9251 1280 1181 1000 1732 "" "6" "square"]
 	Pad[ -9251 3839 -4133 3839 1181 1000 1732 "" "4" "square"]
 	Pad[ 4133 3839 9251 3839 1181 1000 1732 "" "5" "square"]
-	ElementLine[-11051 -6038 -11051 6039 500]
-	ElementLine[11051 6039 -11051 6039 500]
-	ElementLine[11051 6039 11051 -6038 500]
-	ElementLine[-11051 -6038 -2500 -6038 500]
-	ElementLine[2500 -6038 11051 -6038 500]
-	ElementArc[0 -6038 2500 2500 0 180 500]
-#dimension -6692 -3838 -6692 -1278 -6918.1;0 pad_spacing 
-#dimension -6692 -3838 6692 -3838 4606.29 row_spacing 
-#dimension -9251 -3838 -6692 -3838 3070.86 ext_bloat 
-#dimension 4133 -3838 6692 -3838 3070.86 int_bloat 
-#dimension -9842 3839 -3543 3839 -3070.86 <auto> 
-#dimension -6692 3248 -6692 4429 -6918.1;0 pad_thickness 
+	ElementLine[-11051 -6038 -11051 6039 600]
+	ElementLine[11051 6039 -11051 6039 600]
+	ElementLine[11051 6039 11051 -6038 600]
+	ElementLine[-11051 -6038 -2600 -6038 600]
+	ElementLine[2600 -6038 11051 -6038 600]
+	ElementArc[0 -6038 2600 2600 0 180 600]
 )
