@@ -19,7 +19,6 @@ Element["" "Standard SMT resistor, capacitor etc" "" "0603" 0 0 -3150 -3150 0 10
 	ElementLine [-25.00mil 40.00mil -5.00mil 40.00mil 6.00mil]
 	ElementLine [10.00mil 40.00mil 25.00mil 40.00mil 6.00mil]
 	ElementLine [10.00mil 55.00mil 10.00mil 25.00mil 6.00mil]
-	ElementLine [15.00mil 5.00mil 15.00mil 5.00mil 0.08mil]
 	# this is a +  sign
 	#ElementLine [25.00mil -35.00mil 45.00mil -35.00mil 6.00mil]
 	#ElementLine [-35.00mil -45.00mil -35.00mil -25.00mil 6.00mil]
