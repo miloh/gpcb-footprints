@@ -1,5 +1,5 @@
 # Ampehnol USB type A receptacle 
-# UE27-ACX4 is a right angle pth 4 pth-signal and 2 pth-mount(boardlock) usb adapter
+# UE27-ACX4 is a right angle 4 pth signal and 2 pth mount(boardlock) usb adapter
 #
 ## Element[element_flags, desc., pcb-name, value, mark_x, mark_y,  text_x,text_y, text_direction, text_scale, text_flags]
 Element["" "U227-ACX4" "USB" "" 0 0 5mm -6.0mm 0 100 ""]
