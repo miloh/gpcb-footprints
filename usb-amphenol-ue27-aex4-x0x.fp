@@ -2,7 +2,7 @@
 # UE27-ACX4 is a straight down pth 4 pth-signal and 2 pth-mount(boardlock) usb adapter
 #
 ## Element[element_flags, desc., pcb-name, value, mark_x, mark_y,  text_x,text_y, text_direction, text_scale, text_flags]
-Element["" "U227-AEX4-X0X" "USB" "" 0 0 5mm -6.0mm 0 100 ""]
+Element["" "UE27-AEX4-X0X" "USB" "" 0 0 5mm -6.0mm 0 100 ""]
 (
 # Pin        [ rX  rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
 # 'boardlock' mounting holes

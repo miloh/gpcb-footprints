@@ -2,7 +2,7 @@
 # UE27-ASX4-XXX is a right angle pth 8 stacked pth-signal and 4 pth-mount(boardlock) usb adapter
 #
 ## Element[element_flags, desc., pcb-name, value, mark_x, mark_y,  text_x,text_y, text_direction, text_scale, text_flags]
-Element["" "U227-ASX4-XXx" "USB" "" 0 0 5mm -6.6mm 0 100 ""]
+Element["" "UE27-ASX4-XXx" "USB" "" 0 0 5mm -6.6mm 0 100 ""]
 (
 # Pin        [ rX  rY Thickness Clearance Mask Drill "Name" "Number" SFlags]
 # 'boardlock' mounting holes
