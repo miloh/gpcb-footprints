@@ -22,7 +22,7 @@ Element["" "U227-ASX4-XXx" "USB" "" 0 0 5mm -6.6mm 0 100 ""]
  Pin[  1.00mm -2.62mm  1.42mm 0.153mm 0.92mm 0.92mm "mnt" "3" ""]
  Pin[  3.50mm -2.62mm  1.42mm 0.153mm 0.92mm 0.92mm "mnt" "4" ""]
 # ElementLine[ rX1 rY1 rX2 rY2  silk thicknessmil]
-# body outline is roughly 14.50 x 13.85  
+# body outline is roughly 14.50 x 17.00  
     ElementLine[-5.00mm  -4.01mm  5.00mm  -4.01mm  600]
     ElementLine[-7.25mm   1.01mm -7.25mm  -1.27mm  600]
     ElementLine[-7.25mm  12.99mm -7.25mm   4.41mm  600]
