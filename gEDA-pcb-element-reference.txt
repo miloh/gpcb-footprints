@@ -7,6 +7,23 @@
 # ElementArc [ rX rY Width Height StartAngle DeltaAngle Thickness]
 )
 
+# language definitions of pcb's pin element positional attributes:
+
+# 'Thickness' is defined as a diameter bisected over pin xy center, width of copper annulus
+# (sometimes defined in fab specs as 'annular ring') is thickness - drill.
+
+# 'Clearance' is defined as 2 * the width of annuluar ring width beyond drill + and
+# thickness (clearance + thickness = pin keep away zone)
+#
+# 'mask' is defined as the diameter of mask aperture, bisected over pin xy
+# center
+
+# 'Drill' is defined as the diameter of the hole to be drilled, bisected over
+# pin xy center
+#
+# note for the reader: why is clearance defined as 2 * the width of an annular
+# ring and not just the width of the ring?
+
 # notes:
 #   "SFlags" == symbolic flags.  Note sflags is the leading attribute,
 # however in following pad and pin elements it is the trailing attribute.
