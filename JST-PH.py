@@ -95,11 +95,11 @@ for i in range(len(PH_pins)):
     f = footgen.Footgen(PH_basename.format(PH_EntryType['Top'],PH_pins[i]),output_format=format)
     f.pins = PH_pins[i] * 2 
     f.height = PH_dimA[i]
-    f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.080
+    f.generator.clearance = 0.254/2
+    f.generator.mask_clearance = 0.0254
     f.pitch = 2.00
-    f.drill = 0.55
-    f.diameter = f.drill * 2.0
+    f.drill = 0.778
+    f.diameter = f.drill+ 0.508 
     f.width = 0   # this needs to be zero to get a single line of pins
     xsize = 4.5
     silk_xmin = -1.7
@@ -129,11 +129,11 @@ for i in range(len(PH_pins)):
     f = footgen.Footgen(PH_basename.format(PH_EntryType['Side'],PH_pins[i]),output_format=format)
     f.pins = PH_pins[i] * 2 
     f.height = PH_dimA[i]
-    f.generator.clearance = 0.3048
-    f.generator.mask_clearance = 0.080
+    f.generator.clearance = 0.254/2
+    f.generator.mask_clearance = 0.0254
     f.pitch = 2.00
-    f.drill = 0.55
-    f.diameter = f.drill * 2.0
+    f.drill = 0.778 
+    f.diameter = f.drill + 0.508 
     f.width = 0  
     xsize = 7.6
     silk_xmin = -1.6
